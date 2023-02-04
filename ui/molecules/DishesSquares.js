@@ -11,7 +11,16 @@ export default function BasicGrid() {
         {helper.map((dish) => {
           return (
             <Grid key={dish.name} item xs={4}>
-              <Image src={dish.src} alt={dish.name} height={130} width="auto" />
+              {/* <Image src={dish.src} alt={dish.name} height={130} width="auto" /> */}
+              <div
+                style={{
+                  backgroundImage: `url(${dish.src})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  height: "100%",
+                  width: "100%",
+                }}
+              />
             </Grid>
           );
         })}

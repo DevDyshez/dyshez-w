@@ -7,13 +7,16 @@ import NextImage from "next/image";
 import BostonsLogo from "../../public/restaurants/bostons.png";
 import Typography from "@mui/material/Typography";
 import ClockIcon from "../../public/icons/basket.png";
+import { getPlace } from "../../utils/places";
 
 const RestaurantHeader = () => {
+  const place = getPlace("roca");
+
   return (
     <Box sx={{ flexGrow: 1, backgroundColor: "#fff" }}>
       <Grid container sx={{ paddingTop: 2 }}>
         <Grid item xs={5} sx={{ paddingLeft: 5 }}>
-          <CircularImage src={BostonsLogo} alt="Logo" />
+          <CircularImage src={place.logoUrl} alt="Logo" />
         </Grid>
         <Grid item xs={7}>
           <Box sx={{ textAlign: "right" }}>
@@ -25,7 +28,7 @@ const RestaurantHeader = () => {
                 marginRight: 2,
               }}
             >
-              Bostons Pizza Restaurant Bar
+              {place.name}
             </Typography>
             <Typography
               sx={{
@@ -34,7 +37,7 @@ const RestaurantHeader = () => {
                 marginRight: 2,
               }}
             >
-              12:00 a.m. - 13:00 p.m.
+              {place.schedule}
             </Typography>
           </Box>
         </Grid>
