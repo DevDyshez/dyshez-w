@@ -8,7 +8,7 @@ import Tabs from "ui/molecules/Tabs";
 
 export default function Home() {
   return (
-    <div style={{ backgroundColor: "#fff" }}>
+    <div style={{ backgroundColor: "#fff", minHeight: 850 }}>
       <Navbar />
       <RestaurantHeader />
       <Tabs />
