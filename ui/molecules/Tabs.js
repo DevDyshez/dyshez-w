@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -10,7 +11,8 @@ import ListIcon from "../../public/icons/list.png";
 import SquaresIcon from "../../public/icons/squares.png";
 import TopIcon from "../../public/icons/top.png";
 import CategoriesSquares from "./CategoriesSquares";
-import DishesSquares from "./DishesSquares";
+import DishList from "./DishList";
+import DishSquares from "./DishSquares";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,8 +51,8 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+    <Box sx={{ width: "100%", height: "100" }}>
+      <Box sx={{ borderBottom: 1, borderColor: "divider", height: "100%" }}>
         <Tabs
           value={value}
           onChange={handleChange}
@@ -103,10 +105,10 @@ export default function BasicTabs() {
         <CategoriesSquares />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <DishesSquares />
+        <DishList />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <DishSquares />
       </TabPanel>
       <TabPanel value={value} index={3}>
         Item Three
