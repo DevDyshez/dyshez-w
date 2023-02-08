@@ -9,8 +9,10 @@ import IconButton from "@mui/material/IconButton";
 import Logo from "../../public/logo-pink.png";
 import Menu from "../../public/icons/menu.png";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function ButtonAppBar() {
+  const router = useRouter();
   const [state, setState] = useState(false);
 
   const toggleDrawer = () => {
@@ -29,7 +31,15 @@ export default function ButtonAppBar() {
             component="div"
             sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}
           >
-            <Image src={Logo} width={96} height={37} alt="Logo" />
+            <Image
+              src={Logo}
+              width={96}
+              height={37}
+              alt="Logo"
+              onClick={() => {
+                router.push("/");
+              }}
+            />
           </Typography>
         </Toolbar>
       </AppBar>

@@ -5,9 +5,11 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import Image from "next/image";
 import Bachour from "public/restaurants/bachour.jpg";
 import { getMenu } from "utils/dishes";
+import { useRouter } from "next/router";
 
 export default function DishSquares() {
   const dishes = getMenu("roca");
+  const router = useRouter();
 
   return (
     <ImageList
@@ -17,7 +19,10 @@ export default function DishSquares() {
       gap={2}
     >
       {dishes.map((item) => (
-        <ImageListItem key={item.img} onClick={() => alert(item.category)}>
+        <ImageListItem
+          key={item.img}
+          onClick={() => router.push(`/dish?id=${item.id}`)}
+        >
           <img
             src={`${item.imageUrl.src}?w=164&h=170&fit=crop&auto=format`}
             srcSet={`${item.imageUrl.src}?w=164&h=170&fit=crop&auto=format&dpr=2 2x`}
