@@ -13,6 +13,7 @@ import TopIcon from "../../public/icons/top.png";
 import CategoriesSquares from "./CategoriesSquares";
 import DishList from "./DishList";
 import DishSquares from "./DishSquares";
+import { filterMenu } from "utils/dishes";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -45,6 +46,24 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
+
+  const [filteredDishes, setFilteredDishes] = useState([]);
+  const [isFiltered, setIsFiltered] = useState(false);
+  const [categorySelected, setCategorySelected] = useState(null);
+
+  const handleCategorySelect = (category) => {
+    console.log("click", filteredDishes);
+    if (category !== categorySelected) {
+      const helper = filterMenu("roca", category);
+      setFilteredDishes(helper);
+      setIsFiltered(true);
+      setCategorySelected(category);
+    } else {
+      setFilteredDishes([]);
+      setIsFiltered(false);
+      setCategorySelected(null);
+    }
+  };
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -105,7 +124,11 @@ export default function BasicTabs() {
         <CategoriesSquares />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <DishList />
+        <DishList
+          filteredDishes={filteredDishes}
+          handleCategorySelect={handleCategorySelect}
+          categorySelected={categorySelected}
+        />
       </TabPanel>
       <TabPanel value={value} index={2}>
         <DishSquares />
