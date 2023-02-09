@@ -22,11 +22,6 @@ export default function DishList({
           categorySelected={categorySelected}
         />
       </Box>
-      {/* <Box sx={{ height: "100%" }}>
-        {dishes.map((dish) => {
-          return <ListCard item={dish} key={dish.name} />;
-        })}
-      </Box> */}
       <Box>
         <ListCards id={"roca"} filteredDishes={filteredDishes} />
       </Box>

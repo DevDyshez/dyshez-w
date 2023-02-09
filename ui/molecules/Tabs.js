@@ -52,7 +52,6 @@ export default function BasicTabs() {
   const [categorySelected, setCategorySelected] = useState(null);
 
   const handleCategorySelect = (category) => {
-    console.log("click", filteredDishes);
     if (category !== categorySelected) {
       const helper = filterMenu("roca", category);
       setFilteredDishes(helper);

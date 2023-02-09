@@ -28,7 +28,7 @@ const ScrollableCategories = ({
             onClick={() => {
               handleCategorySelect(item.category);
             }}
-            variant="outlined"
+            variant={item.category === categorySelected ? "outlined" : "filled"}
           />
         );
       })}
