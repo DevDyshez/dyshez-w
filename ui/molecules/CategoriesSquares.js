@@ -6,8 +6,17 @@ import Image from "next/image";
 import Bachour from "public/restaurants/bachour.jpg";
 import { getMenuCategories } from "utils/dishes";
 
-export default function CategoriesSquares() {
+export default function CategoriesSquares({
+  id,
+  handleCategorySelect,
+  handleChange,
+}) {
   const categories = getMenuCategories("roca");
+
+  const handleClick = (category) => {
+    handleCategorySelect(category);
+    handleChange("click", 2);
+  };
 
   return (
     <ImageList
@@ -17,7 +26,10 @@ export default function CategoriesSquares() {
       gap={1}
     >
       {categories.map((item) => (
-        <ImageListItem key={item.img} onClick={() => alert(item.category)}>
+        <ImageListItem
+          key={item.img}
+          onClick={() => handleClick(item.category)}
+        >
           <img
             src={`${item.imageUrl.src}?w=164&h=130&fit=crop&auto=format`}
             srcSet={`${item.imageUrl.src}?w=164&h=130&fit=crop&auto=format&dpr=2 2x`}

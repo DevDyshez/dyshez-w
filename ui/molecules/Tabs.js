@@ -120,7 +120,11 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <CategoriesSquares />
+        <CategoriesSquares
+          id={"roca"}
+          handleCategorySelect={handleCategorySelect}
+          handleChange={handleChange}
+        />
       </TabPanel>
       <TabPanel value={value} index={1}>
         <DishList

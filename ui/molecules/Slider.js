@@ -18,7 +18,6 @@ export default function PhotoSlider({ images }) {
     slidesToScroll: 1,
   };
 
-  console.log(Test1.src);
   return (
     <Box>
       <Slider {...settings}>
