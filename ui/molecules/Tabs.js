@@ -130,7 +130,11 @@ export default function BasicTabs() {
         />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <DishSquares />
+        <DishSquares
+          filteredDishes={filteredDishes}
+          handleCategorySelect={handleCategorySelect}
+          categorySelected={categorySelected}
+        />
       </TabPanel>
       <TabPanel value={value} index={3}>
         Item Three
