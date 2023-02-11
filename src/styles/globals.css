@@ -93,3 +93,31 @@ a {
     color-scheme: dark;
   }
 }
+
+@font-face {
+  font-family: "MontserratMedium";
+  src: url("../../public/fonts/MontserratMedium.ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url("../../public/fonts/PoppinsRegular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PoppinsMedium";
+  src: url("../../public/fonts/PoppinsMedium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PoppinsLight";
+  src: url("../../public/fonts/PoppinsLight.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
