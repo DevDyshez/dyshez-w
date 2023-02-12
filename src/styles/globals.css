@@ -121,3 +121,17 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "PoppinsSemiBoldItalic";
+  src: url("../../public/fonts/PoppinsSemiBoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PoppinsSemiBold";
+  src: url("../../public/fonts/PoppinsSemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}

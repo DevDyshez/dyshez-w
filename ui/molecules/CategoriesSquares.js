@@ -5,6 +5,7 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import Image from "next/image";
 import Bachour from "public/restaurants/bachour.jpg";
 import { getMenuCategories } from "utils/dishes";
+import styles from "@/styles/Home.module.css";
 
 export default function CategoriesSquares({
   id,
@@ -38,11 +39,22 @@ export default function CategoriesSquares({
           />
           <ImageListItemBar
             sx={{
-              background:
-                "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, " +
-                "rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
+              backgroundColor: "#fff",
               height: 20,
-              "& .MuiImageListItemBar-title": { fontSize: 14 },
+              width: 95,
+              borderTopRightRadius: 20,
+              borderBottomRightRadius: 20,
+              bottom: 10,
+              "& .MuiImageListItemBar-title": {
+                fontSize: 11,
+                color: "#000",
+                fontFamily: "PoppinsRegular",
+              },
+              "& .MuiImageListItemBar-titleWrap": {
+                padding: 0,
+                paddingLeft: 1,
+                margin: 0,
+              },
             }}
             title={item.category}
             position="bottom"

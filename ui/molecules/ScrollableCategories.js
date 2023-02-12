@@ -3,6 +3,7 @@ import { getMenuCategories } from "utils/dishes";
 import Chip from "@mui/material/Chip";
 import { useState } from "react";
 import { filterMenu } from "utils/dishes";
+import styles from "@/styles/Home.module.css";
 
 const ScrollableCategories = ({
   id,
@@ -15,7 +16,7 @@ const ScrollableCategories = ({
       style={{
         overflow: "auto",
         whiteSpace: "nowrap",
-        height: 50,
+        height: 55,
         paddingTop: 5,
         paddingBottom: 5,
       }}
@@ -29,6 +30,12 @@ const ScrollableCategories = ({
               handleCategorySelect(item.category);
             }}
             variant={item.category === categorySelected ? "outlined" : "filled"}
+            sx={{
+              fontFamily: "PoppinsSemiBold",
+              fontSize: 12,
+              height: 39,
+              marginRight: 1,
+            }}
           />
         );
       })}

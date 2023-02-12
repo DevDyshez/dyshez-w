@@ -4,10 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Box } from "@mui/material";
 import Image from "next/image";
-import Test1 from "public/dishes/roca/quesobrie1.jpg";
-import Test2 from "public/dishes/roca/quesobrie2.jpg";
-import Test3 from "public/dishes/roca/quesobrie3.jpg";
-import Test4 from "public/dishes/roca/quesobrie4.jpg";
 
 export default function PhotoSlider({ images }) {
   var settings = {

@@ -7,6 +7,7 @@ import KCalIcon from "public/icons/kcal.png";
 import GlutenFreeIcon from "public/icons/glutenfree.png";
 import VeganIcon from "public/icons/vegan.png";
 import Image from "next/image";
+import styles from "@/styles/Home.module.css";
 
 export default function DishDescription({
   name,
@@ -28,6 +29,7 @@ export default function DishDescription({
               WebkitLineClamp: 2,
               fontSize: 16,
               fontWeight: 700,
+              fontFamily: "PoppinsSemiBold",
             }}
           >
             {name}
@@ -41,12 +43,13 @@ export default function DishDescription({
               justifyContent: "center",
               textAlign: "center",
               color: "#000",
-              WebkitLineClamp: 2,
+              WebkitLineClamp: 3,
               display: "-webkit-box",
               overflow: "hidden",
               WebkitBoxOrient: "vertical",
               fontSize: 14,
               margin: 2,
+              fontFamily: "MontserratMedium",
             }}
           >
             {description}
@@ -89,6 +92,7 @@ export default function DishDescription({
               color: "#000",
               fontSize: 16,
               paddingBottom: 2,
+              fontFamily: "PoppinsMedium",
             }}
           >
             ${price}
@@ -128,9 +132,10 @@ export default function DishDescription({
             sx={{
               flexGrow: 1,
               textAlign: "center",
-              color: "#000",
-              fontSize: 16,
+              color: "#666666",
+              fontSize: 13,
               paddingBottom: 2,
+              fontFamily: "PoppinsMedium",
             }}
           >
             {callories} kcal

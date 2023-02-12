@@ -7,8 +7,11 @@ import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import NextIcon from "public/icons/next.png";
 import Divider from "@mui/material/Divider";
+import styles from "@/styles/Home.module.css";
+import { useRouter } from "next/router";
 
 const RenderItem = ({ item }) => {
+  const router = useRouter();
   return (
     <Box
       sx={{
@@ -29,6 +32,7 @@ const RenderItem = ({ item }) => {
           color: "#000",
           fontSize: 16,
           marginBottom: 2,
+          fontFamily: "PoppinsSemiBoldItalic",
         }}
       >
         {item.name}
@@ -46,7 +50,8 @@ const RenderItem = ({ item }) => {
               overflow: "hidden",
               WebkitBoxOrient: "vertical",
               WebkitLineClamp: 2,
-              fontSize: 13,
+              fontSize: 12,
+              fontFamily: "PoppinsLight",
             }}
           >
             {item.description}
@@ -61,7 +66,15 @@ const RenderItem = ({ item }) => {
             paddingRight: 10,
           }}
         >
-          <Image src={NextIcon} alt="Next Icon" height={20} width={20} />
+          <Image
+            src={NextIcon}
+            alt="Next Icon"
+            height={25}
+            width={25}
+            onClick={() => {
+              router.push(`/dish?id=${item.id}`);
+            }}
+          />
         </Grid>
         <Grid item xs={6} style={{ marginTop: 5 }}>
           <Typography
@@ -71,6 +84,7 @@ const RenderItem = ({ item }) => {
               justifyContent: "flex-start",
               color: "#000",
               fontSize: 12,
+              fontFamily: "PoppinsMedium",
             }}
           >
             {item.callories} kCal
@@ -85,12 +99,13 @@ const RenderItem = ({ item }) => {
             color: "#000",
             fontSize: 12,
             marginTop: 5,
+            fontFamily: "PoppinsMedium",
           }}
         >
           ${item.price}
         </Grid>
       </Grid>
-      <Divider sx={{ backgroundColor: "#dddddd", marginTop: 2 }} />
+      <Divider sx={{ backgroundColor: "#dddddd", marginTop: 2, height: 2 }} />
     </Box>
   );
 };

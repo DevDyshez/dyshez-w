@@ -26,15 +26,18 @@ const RenderItem = ({ item }) => {
         sx={{
           bottom: "10%",
           right: "0",
-          left: "5%",
+          left: "25%",
           borderTopLeftRadius: 10,
           borderBottomLeftRadius: 10,
           paddingTop: 2,
           paddingBottom: 3,
           textAlign: "right",
-          backgroundColor: "rgba(0, 0, 0, 0.6)",
+          backgroundColor: " #2D2D2D",
           height: 20,
-          "& .MuiImageListItemBar-title": { fontSize: 14 },
+          "& .MuiImageListItemBar-title": {
+            fontSize: 10,
+            fontFamily: "PoppinsRegular",
+          },
         }}
         title={item.name}
         subtitle={`$${item.price}`}
