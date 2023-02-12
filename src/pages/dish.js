@@ -12,7 +12,7 @@ export default function Dish() {
   return (
     <div style={{ backgroundColor: "#fff", minHeight: 850 }}>
       <Navbar />
-      <PhotoSlider images={dish?.imagesTest} />
+      <PhotoSlider images={dish?.images} />
       <DishDescription
         name={dish?.name}
         description={dish?.description}

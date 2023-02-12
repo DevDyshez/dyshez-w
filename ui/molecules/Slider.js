@@ -21,38 +21,16 @@ export default function PhotoSlider({ images }) {
   return (
     <Box>
       <Slider {...settings}>
-        <div
-          style={{
-            width: "100%",
-            position: "relative",
-          }}
-        >
-          <Image src={Test1} alt="Test 1" height={300} />
-        </div>
-        <div
-          style={{
-            width: "100%",
-            position: "relative",
-          }}
-        >
-          <Image src={Test2} alt="Test 1" height={300} />
-        </div>
-        <div
-          style={{
-            width: "100%",
-            position: "relative",
-          }}
-        >
-          <Image src={Test3} alt="Test 1" height={300} />
-        </div>
-        <div
-          style={{
-            width: "100%",
-            position: "relative",
-          }}
-        >
-          <Image src={Test4} alt="Test 1" height={300} />
-        </div>
+        {images.map((image) => {
+          return (
+            <div
+              key={image.src}
+              style={{ width: "100%", position: "relative" }}
+            >
+              <Image src={image.src} alt="Test" height={300} width={390} />
+            </div>
+          );
+        })}
       </Slider>
     </Box>
   );

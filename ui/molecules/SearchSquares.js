@@ -14,7 +14,6 @@ const SearchSquares = () => {
     const helper = dishes.filter((dish) => {
       return dish.name.toLowerCase().includes(searchLabel.toLowerCase());
     });
-    console.log(helper);
     if (helper.length) {
       setFiltered(helper);
     }
@@ -28,7 +27,6 @@ const SearchSquares = () => {
         searchLabel={searchLabel}
       />
       <Box>
-        {console.log(filtered, "hola")}
         <DishImage
           id={"roca"}
           filteredDishes={filtered.length > 0 ? filtered : dishes}
