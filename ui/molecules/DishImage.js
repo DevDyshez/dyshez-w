@@ -45,6 +45,7 @@ const RenderItem = ({ item }) => {
 
 const DishImage = ({ id, filteredDishes }) => {
   const dishes = getMenu(id);
+  console.log(filteredDishes, "buenas");
 
   return (
     <ImageList

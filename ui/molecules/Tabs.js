@@ -14,6 +14,7 @@ import CategoriesSquares from "./CategoriesSquares";
 import DishList from "./DishList";
 import DishSquares from "./DishSquares";
 import { filterMenu } from "utils/dishes";
+import SearchSquares from "./SearchSquares";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -141,7 +142,7 @@ export default function BasicTabs() {
         />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Three
+        <SearchSquares />
       </TabPanel>
     </Box>
   );

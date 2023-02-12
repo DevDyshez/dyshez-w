@@ -1,0 +1,41 @@
+import React, { useState } from "react";
+import { Box } from "@mui/material";
+import DishImage from "./DishImage";
+import SearchInput from "./SearchInput";
+import { getMenu } from "utils/dishes";
+
+const SearchSquares = () => {
+  const [filtered, setFiltered] = useState([]);
+  const [searchLabel, setSearchLabel] = useState("");
+
+  const dishes = getMenu("roca");
+
+  const filterMenu = () => {
+    const helper = dishes.filter((dish) => {
+      return dish.name.toLowerCase().includes(searchLabel.toLowerCase());
+    });
+    console.log(helper);
+    if (helper.length) {
+      setFiltered(helper);
+    }
+  };
+
+  return (
+    <>
+      <SearchInput
+        setSearchLabel={setSearchLabel}
+        filterMenu={filterMenu}
+        searchLabel={searchLabel}
+      />
+      <Box>
+        {console.log(filtered, "hola")}
+        <DishImage
+          id={"roca"}
+          filteredDishes={filtered.length > 0 ? filtered : dishes}
+        />
+      </Box>
+    </>
+  );
+};
+
+export default SearchSquares;
