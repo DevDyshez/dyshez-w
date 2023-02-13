@@ -17,7 +17,7 @@ export default function PhotoSlider({ images }) {
   return (
     <Box>
       <Slider {...settings}>
-        {images.map((image) => {
+        {images?.map((image) => {
           return (
             <div
               key={image.src}
