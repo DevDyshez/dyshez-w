@@ -23,7 +23,7 @@ export default function PhotoSlider({ images }) {
               key={image.src}
               style={{ width: "100%", position: "relative" }}
             >
-              <Image src={image.src} alt="Test" height={300} width={390} />
+              <Image src={image.src} alt="Test" height={390} width={390} />
             </div>
           );
         })}

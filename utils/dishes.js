@@ -1,48 +1,79 @@
 import Test from "public/restaurants/bachour.jpg";
-import RocaQuesoBrie1 from "public/dishes/roca/quesobrie1.jpg";
-import RocaQuesoBrie2 from "public/dishes/roca/quesobrie2.jpg";
-import RocaQuesoBrie3 from "public/dishes/roca/quesobrie3.jpg";
-import RocaQuesoBrie4 from "public/dishes/roca/quesobrie4.jpg";
-import RocaGravlax1 from "public/dishes/roca/gravlax1.jpg";
-import RocaGravlax2 from "public/dishes/roca/gravlax2.jpg";
-import RocaGravlax3 from "public/dishes/roca/gravlax3.jpg";
-import RocaGravlax4 from "public/dishes/roca/gravlax4.jpg";
-import RocaOstiones1 from "public/dishes/roca/ostionesrockefeller1.jpg";
-import RocaOstiones2 from "public/dishes/roca/ostionesrockefeller2.jpg";
-import RocaOstiones3 from "public/dishes/roca/ostionesrockefeller3.jpg";
-import RocaOstiones4 from "public/dishes/roca/ostionesrockefeller4.jpg";
-import Coliflor1 from "public/dishes/roca/coliflor1.jpg";
-import Coliflor2 from "public/dishes/roca/coliflor2.jpg";
-import Wonton1 from "public/dishes/roca/wonton1.jpg";
-import Wonton2 from "public/dishes/roca/wonton2.jpg";
-import Wonton3 from "public/dishes/roca/wonton3.jpg";
-import PulpoYuc1 from "public/dishes/roca/pulpoyuc1.png";
-import PechugaPollo1 from "public/dishes/roca/pechugapolloorganica1.jpg";
-import PechugaPollo2 from "public/dishes/roca/pechugapolloorganica2.jpg";
-import PechugaPollo3 from "public/dishes/roca/pechugapolloorganica3.jpg";
-import SalmonPistache1 from "public/dishes/roca/salmonpistache1.jpg";
-import SalmonPistache2 from "public/dishes/roca/salmonpistache2.jpg";
-import SalmonPistache3 from "public/dishes/roca/salmonpistache3.jpg";
-import SalmonPistache4 from "public/dishes/roca/salmonpistache4.jpg";
-import SurfAndTurf1 from "public/dishes/roca/surfandturf1.jpg";
-import SurfAndTurf2 from "public/dishes/roca/surfandturf2.jpg";
-import SurfAndTurf3 from "public/dishes/roca/surfandturf3.jpg";
-import SurfAndTurf4 from "public/dishes/roca/surfandturf4.jpg";
-import SurfAndTurf5 from "public/dishes/roca/surfandturf5.jpg";
-import CaldoRoca1 from "public/dishes/roca/caldoroca1.png";
-import EnsaladaCesar1 from "public/dishes/roca/ensaladacesar1.jpg";
-import RisottoNegro1 from "public/dishes/roca/risottonegro1.png";
-import RisottoNegro2 from "public/dishes/roca/risottonegro2.png";
-import RisottoNegro3 from "public/dishes/roca/risottonegro3.png";
-import RibEye1 from "public/dishes/roca/ribeye1.jpg";
-import RibEye2 from "public/dishes/roca/ribeye2.jpg";
-import RibEye3 from "public/dishes/roca/ribeye3.jpg";
-import RibEye4 from "public/dishes/roca/ribeye4.jpg";
-import Cowboy1 from "public/dishes/roca/cowboy1.jpg";
-import Cowboy2 from "public/dishes/roca/cowboy1.jpg";
-import Cowboy3 from "public/dishes/roca/cowboy1.jpg";
-import Cowboy4 from "public/dishes/roca/cowboy1.jpg";
-import MacNCheese from "public/dishes/roca/macncheese1.jpg";
+import RocaQuesoBrie1 from "public/dishes/roca/quesobrie1.webp";
+import RocaQuesoBrie2 from "public/dishes/roca/quesobrie2.webp";
+import RocaQuesoBrie3 from "public/dishes/roca/quesobrie3.webp";
+import RocaGravlax1 from "public/dishes/roca/gravlax1.webp";
+import RocaGravlax2 from "public/dishes/roca/gravlax2.webp";
+import RocaGravlax3 from "public/dishes/roca/gravlax3.webp";
+import RocaOstiones1 from "public/dishes/roca/ostionesrockefeller1.webp";
+import RocaOstiones2 from "public/dishes/roca/ostionesrockefeller2.webp";
+import RocaOstiones3 from "public/dishes/roca/ostionesrockefeller3.webp";
+import Coliflor1 from "public/dishes/roca/coliflor1.webp";
+import Coliflor2 from "public/dishes/roca/coliflor2.webp";
+import Kibi1 from "public/dishes/roca/kibi1.webp";
+import QuesoFundido1 from "public/dishes/roca/quesofundido1.webp";
+import QuesoFundido2 from "public/dishes/roca/quesofundido2.webp";
+import Wonton1 from "public/dishes/roca/wonton1.webp";
+import Wonton2 from "public/dishes/roca/wonton2.webp";
+import Wonton3 from "public/dishes/roca/wonton3.webp";
+import Tartar1 from "public/dishes/roca/tartar1.webp";
+import Tiradito1 from "public/dishes/roca/tiradito1.webp";
+import Tiradito2 from "public/dishes/roca/tiradito2.webp";
+import Guacamole1 from "public/dishes/roca/guacamole1.webp";
+import PulpoYuc1 from "public/dishes/roca/pulpoyuc1.webp";
+import PulpoYuc2 from "public/dishes/roca/pulpoyuc2.webp";
+import PulpoYuc3 from "public/dishes/roca/pulpoyuc3.webp";
+import Caramelo1 from "public/dishes/roca/caramelo1.webp";
+import Centro1 from "public/dishes/roca/centro1.webp";
+import Hamburguesa1 from "public/dishes/roca/hamburguesa1.webp";
+import Hamburguesa2 from "public/dishes/roca/hamburguesa2.webp";
+import PechugaPollo1 from "public/dishes/roca/pechugapolloorganica1.webp";
+import PechugaPollo2 from "public/dishes/roca/pechugapolloorganica2.webp";
+import PechugaPollo3 from "public/dishes/roca/pechugapolloorganica3.webp";
+import SalmonPistache1 from "public/dishes/roca/salmonpistache1.webp";
+import SalmonPistache2 from "public/dishes/roca/salmonpistache2.webp";
+import SalmonPistache3 from "public/dishes/roca/salmonpistache3.webp";
+import SurfAndTurf1 from "public/dishes/roca/surfandturf1.webp";
+import SurfAndTurf2 from "public/dishes/roca/surfandturf2.webp";
+import SurfAndTurf3 from "public/dishes/roca/surfandturf3.webp";
+import CaldoRoca1 from "public/dishes/roca/caldoroca1.webp";
+import CaldoRoca2 from "public/dishes/roca/caldoroca2.webp";
+import CaldoRoca3 from "public/dishes/roca/caldoroca3.webp";
+import EnsaladaCesar1 from "public/dishes/roca/ensaladacesar1.webp";
+import EnsaladaBurrata1 from "public/dishes/roca/ensaladaburrata1.webp";
+import EnsaladaBurrata2 from "public/dishes/roca/ensaladaburrata2.webp";
+import SopaCebolla1 from "public/dishes/roca/sopacebolla1.webp";
+import SopaCebolla2 from "public/dishes/roca/sopacebolla2.webp";
+import RisottoNegro1 from "public/dishes/roca/risottonegro1.webp";
+import RisottoNegro2 from "public/dishes/roca/risottonegro2.webp";
+import RisottoNegro3 from "public/dishes/roca/risottonegro3.webp";
+import Ravioles1 from "public/dishes/roca/ravioles1.webp";
+import Ravioles2 from "public/dishes/roca/ravioles2.webp";
+import FettucciniCacahuate1 from "public/dishes/roca/fettuccinicacahuate1.webp";
+import FettucciniCacahuate2 from "public/dishes/roca/fettuccinicacahuate2.webp";
+import FettucciniCacahuate3 from "public/dishes/roca/fettuccinicacahuate3.webp";
+import FetucciniRoca1 from "public/dishes/roca/fetucciniroca1.webp";
+import FetucciniRoca2 from "public/dishes/roca/fetucciniroca2.webp";
+import RibEye1 from "public/dishes/roca/ribeye1.webp";
+import RibEye2 from "public/dishes/roca/ribeye2.webp";
+import RibEye3 from "public/dishes/roca/ribeye3.webp";
+import Barbacoa1 from "public/dishes/roca/barbacoa1.webp";
+import Barbacoa2 from "public/dishes/roca/barbacoa2.webp";
+import Barbacoa3 from "public/dishes/roca/barbacoa3.webp";
+import Cowboy1 from "public/dishes/roca/cowboy1.webp";
+import Cowboy2 from "public/dishes/roca/cowboy2.webp";
+import Cowboy3 from "public/dishes/roca/cowboy3.webp";
+import NewYork1 from "public/dishes/roca/newyork1.webp";
+import NewYork2 from "public/dishes/roca/newyork2.webp";
+import NewYork3 from "public/dishes/roca/newyork3.webp";
+import MacNCheese from "public/dishes/roca/macncheese1.webp";
+import PapasFrancesa1 from "public/dishes/roca/papasfrancesa1.webp";
+import PapasFrancesa2 from "public/dishes/roca/papasfrancesa2.webp";
+import Espinacas1 from "public/dishes/roca/espinacas1.webp";
+import Espinacas2 from "public/dishes/roca/espinacas2.webp";
+import Verduras1 from "public/dishes/roca/verduras1.webp";
+import Verduras2 from "public/dishes/roca/verduras2.webp";
+import Cebolla1 from "public/dishes/roca/cebolla1.webp";
 
 export const getMenu = (id) => {
   return dishes.filter((item) => item.restaurantId === id);
@@ -89,13 +120,7 @@ export const dishes = [
     price: 260,
     category: "Entradas",
     imageUrl: RocaQuesoBrie1,
-    images: [
-      RocaQuesoBrie1,
-      RocaQuesoBrie2,
-      RocaQuesoBrie3,
-      RocaQuesoBrie3,
-      RocaQuesoBrie4,
-    ],
+    images: [RocaQuesoBrie1, RocaQuesoBrie2, RocaQuesoBrie3],
     likes: 5,
     comments: 2,
   },
@@ -109,7 +134,7 @@ export const dishes = [
     price: 240,
     category: "Entradas",
     imageUrl: RocaGravlax1,
-    images: [RocaGravlax1, RocaGravlax2, RocaGravlax3, RocaGravlax4],
+    images: [RocaGravlax1, RocaGravlax2, RocaGravlax3],
     likes: 5,
     comments: 0,
   },
@@ -122,7 +147,7 @@ export const dishes = [
     price: 360,
     category: "Entradas",
     imageUrl: RocaOstiones1,
-    images: [RocaOstiones1, RocaOstiones2, RocaOstiones3, RocaOstiones4],
+    images: [RocaOstiones1, RocaOstiones2, RocaOstiones3],
     likes: 5,
     comments: 2,
   },
@@ -149,8 +174,8 @@ export const dishes = [
     callories: 200,
     price: 210,
     category: "Entradas",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: Kibi1,
+    images: [Kibi1],
     likes: 5,
     comments: 0,
   },
@@ -162,8 +187,8 @@ export const dishes = [
     callories: 200,
     price: 150,
     category: "Entradas",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: QuesoFundido1,
+    images: [QuesoFundido1, QuesoFundido2],
     likes: 5,
     comments: 2,
   },
@@ -190,8 +215,8 @@ export const dishes = [
     callories: 200,
     price: 350,
     category: "Entradas",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: Tartar1,
+    images: [Tartar1],
     likes: 5,
     comments: 2,
   },
@@ -204,8 +229,8 @@ export const dishes = [
     callories: 200,
     price: 320,
     category: "Entradas",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: Tiradito1,
+    images: [Tiradito1, Tiradito2],
     likes: 5,
     comments: 2,
   },
@@ -217,8 +242,8 @@ export const dishes = [
     callories: 200,
     price: 150,
     category: "Entradas",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: Guacamole1,
+    images: [Guacamole1],
     likes: 5,
     comments: 2,
   },
@@ -245,8 +270,8 @@ export const dishes = [
     callories: 200,
     price: 380,
     category: "Especialidades",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: Caramelo1,
+    images: [Caramelo1],
     likes: 5,
     comments: 2,
   },
@@ -259,8 +284,8 @@ export const dishes = [
     callories: 200,
     price: 850,
     category: "Especialidades",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: Centro1,
+    images: [Centro1],
     likes: 5,
     comments: 2,
   },
@@ -273,8 +298,8 @@ export const dishes = [
     callories: 200,
     price: 370,
     category: "Especialidades",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: Hamburguesa1,
+    images: [Hamburguesa1, Hamburguesa2],
     likes: 5,
     comments: 2,
   },
@@ -302,12 +327,7 @@ export const dishes = [
     price: 380,
     category: "Especialidades",
     imageUrl: SalmonPistache1,
-    images: [
-      SalmonPistache1,
-      SalmonPistache2,
-      SalmonPistache3,
-      SalmonPistache4,
-    ],
+    images: [SalmonPistache1, SalmonPistache2, SalmonPistache3],
     likes: 5,
     comments: 2,
   },
@@ -321,13 +341,7 @@ export const dishes = [
     price: 850,
     category: "Especialidades",
     imageUrl: SurfAndTurf1,
-    images: [
-      SurfAndTurf1,
-      SurfAndTurf2,
-      SurfAndTurf3,
-      SurfAndTurf4,
-      SurfAndTurf5,
-    ],
+    images: [SurfAndTurf1, SurfAndTurf2, SurfAndTurf3],
     likes: 5,
     comments: 2,
   },
@@ -341,7 +355,7 @@ export const dishes = [
     price: 300,
     category: "Ensaladas y Sopas",
     imageUrl: CaldoRoca1,
-    images: [CaldoRoca1],
+    images: [CaldoRoca1, CaldoRoca2, CaldoRoca3],
     likes: 5,
     comments: 2,
   },
@@ -382,8 +396,8 @@ export const dishes = [
     callories: 200,
     price: 295,
     category: "Ensaladas y Sopas",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: EnsaladaBurrata1,
+    images: [EnsaladaBurrata1, EnsaladaBurrata2],
     likes: 5,
     comments: 2,
   },
@@ -409,8 +423,8 @@ export const dishes = [
     callories: 200,
     price: 200,
     category: "Ensaladas y Sopas",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: SopaCebolla1,
+    images: [SopaCebolla1, SopaCebolla2],
     likes: 5,
     comments: 2,
   },
@@ -437,8 +451,8 @@ export const dishes = [
     callories: 200,
     price: 310,
     category: "Risottos y Pastas",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: Ravioles1,
+    images: [Ravioles1, Ravioles2],
     likes: 5,
     comments: 2,
   },
@@ -451,8 +465,8 @@ export const dishes = [
     callories: 200,
     price: 360,
     category: "Risottos y Pastas",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: FettucciniCacahuate1,
+    images: [FettucciniCacahuate1, FettucciniCacahuate2, FettucciniCacahuate3],
     likes: 5,
     comments: 2,
   },
@@ -471,7 +485,7 @@ export const dishes = [
     comments: 2,
   },
   {
-    name: "Rocas fetuccini",
+    name: "Roca's fetuccini",
     id: "rocafetuccini",
     restaurantId: "roca",
     description:
@@ -479,8 +493,8 @@ export const dishes = [
     callories: 200,
     price: 350,
     category: "Risottos y Pastas",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: FetucciniRoca1,
+    images: [FetucciniRoca1, FetucciniRoca2],
     likes: 5,
     comments: 2,
   },
@@ -507,7 +521,7 @@ export const dishes = [
     price: 560,
     category: "Cortes Prime",
     imageUrl: RibEye1,
-    images: [RibEye1, RibEye2, RibEye3, RibEye4],
+    images: [RibEye1, RibEye2, RibEye3],
     likes: 5,
     comments: 2,
   },
@@ -519,8 +533,8 @@ export const dishes = [
     callories: 200,
     price: 560,
     category: "Cortes Prime",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: Barbacoa1,
+    images: [Barbacoa1, Barbacoa2, Barbacoa3],
     likes: 5,
     comments: 2,
   },
@@ -559,7 +573,7 @@ export const dishes = [
     price: 560,
     category: "Cortes Prime",
     imageUrl: Cowboy1,
-    images: [Cowboy1, Cowboy2, Cowboy3, Cowboy4],
+    images: [Cowboy1, Cowboy2, Cowboy3],
     likes: 5,
     comments: 2,
   },
@@ -584,8 +598,8 @@ export const dishes = [
     callories: 200,
     price: 560,
     category: "Cortes Prime",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: NewYork1,
+    images: [NewYork1, NewYork2, NewYork3],
     likes: 5,
     comments: 2,
   },
@@ -623,8 +637,8 @@ export const dishes = [
     callories: 200,
     price: 90,
     category: "Guarniciones",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: PapasFrancesa1,
+    images: [PapasFrancesa1, PapasFrancesa2],
     likes: 5,
     comments: 2,
   },
@@ -636,8 +650,8 @@ export const dishes = [
     callories: 200,
     price: 105,
     category: "Guarniciones",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: Espinacas1,
+    images: [Espinacas1, Espinacas2],
     likes: 5,
     comments: 2,
   },
@@ -649,8 +663,8 @@ export const dishes = [
     callories: 200,
     price: 80,
     category: "Guarniciones",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: Verduras1,
+    images: [Verduras1, Verduras2],
     likes: 5,
     comments: 2,
   },
@@ -662,8 +676,8 @@ export const dishes = [
     callories: 200,
     price: 60,
     category: "Guarniciones",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: Cebolla1,
+    images: [Cebolla1],
     likes: 5,
     comments: 2,
   },
