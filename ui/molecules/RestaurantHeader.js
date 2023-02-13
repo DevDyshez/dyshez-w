@@ -12,7 +12,7 @@ import Image from "next/image";
 import LocationIcon from "../../public/icons/location.png";
 import PlusIcon from "../../public/icons/plus.png";
 import ReservationIcon from "../../public/icons/reservation.png";
-import HeartIcon from "../../public/icons/heart1.png";
+import HeartIcon from "../../public/icons/newheart.png";
 import { useRouter } from "next/router";
 import Description from "./Description";
 

@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
+import { Button } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import Tooltip from "@mui/material/Tooltip";
 import ListIcon from "../../public/icons/list.png";
+import CopyIcon from "../../public/icons/copyfile.png";
 import DirectionIcon from "../../public/icons/direction.png";
 import PinkClockIcon from "../../public/icons/pinkclock.png";
 import PinkPhoneIcon from "../../public/icons/pinkphone.png";
 import WebIcon from "../../public/icons/web.png";
 import styles from "../../src/styles/Home.module.css";
+import Link from "next/link";
 
 const Description = () => {
+  const [showFullText, setShowFullText] = useState(false);
+  const [showFullSchedule, setShowFullSchedule] = useState(false);
+  const text =
+    "Con una original combinación entre clásico y lo contemporáneo, ROCA Steakhouse es un inigualable restaurante gourmet en Mérida, Yucatán, ideal para los amantes de los cortes de carne prime.";
+
   return (
     <Box sx={{ marginTop: 1 }}>
       <Grid container>
@@ -35,19 +43,60 @@ const Description = () => {
             alignItems: "center",
           }}
         >
-          <Typography
-            sx={{
-              color: "#000",
-              fontSize: 12,
-              fontWeight: "800",
-              marginRight: 2,
-              fontFamily: "PoppinsLight",
-            }}
-          >
-            Con una original combinación entre clásico y lo contemporáneo, ROCA
-            Steakhouse es un inigualable restaurante gourmet en Mérida, Yucatán,
-            ideal para los amantes de los cortes de carne prime.
-          </Typography>
+          <div style={{ position: "relative" }}>
+            <Typography
+              sx={{
+                color: "#333333",
+                fontSize: 12,
+                fontWeight: "800",
+                marginRight: 2,
+                fontFamily: "MontserratMedium",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                display: "-webkit-box",
+                WebkitLineClamp: showFullText ? null : 2,
+                WebkitBoxOrient: "vertical",
+              }}
+            >
+              {text}
+            </Typography>
+            {!showFullText && (
+              <h1
+                style={{
+                  position: "absolute",
+                  bottom: 2,
+                  right: 15,
+                  color: "#333333",
+                  fontSize: 12,
+                  fontWeight: "800",
+                  fontFamily: "MontserratMedium",
+                }}
+                onClick={() => {
+                  setShowFullText(!showFullText);
+                }}
+              >
+                Ver mas
+              </h1>
+            )}
+            {showFullText && (
+              <h1
+                style={{
+                  position: "absolute",
+                  bottom: 0,
+                  right: 10,
+                  color: "#333333",
+                  fontSize: 12,
+                  fontWeight: "800",
+                  fontFamily: "MontserratMedium",
+                }}
+                onClick={() => {
+                  setShowFullText(!showFullText);
+                }}
+              >
+                Ver menos
+              </h1>
+            )}
+          </div>
         </Grid>
       </Grid>
       <Grid container sx={{ marginTop: 1 }}>
@@ -73,11 +122,11 @@ const Description = () => {
         >
           <Typography
             sx={{
-              color: "#000",
+              color: "#333333",
               fontSize: 12,
               fontWeight: "800",
               marginRight: 2,
-              fontFamily: "PoppinsLight",
+              fontFamily: "MontserratMedium",
             }}
           >
             Av. Andrés García Lavin, Montebello, Luxury Place, Local-5, Mérida,
@@ -93,7 +142,7 @@ const Description = () => {
             alignItems: "center",
           }}
         >
-          <Image src={ListIcon} width={20} height={20} alt="List Icon" />
+          <Image src={CopyIcon} width={20} height={24} alt="List Icon" />
         </Grid>
       </Grid>
       <Grid container sx={{ marginTop: 1 }}>
@@ -119,37 +168,72 @@ const Description = () => {
         >
           <Typography
             sx={{
-              color: "#000",
+              color: "#35B736",
               fontSize: 12,
               fontWeight: "800",
               marginRight: 2,
-              fontFamily: "PoppinsLight",
+              fontFamily: "MontserratMedium",
             }}
           >
-            Abierto: 13:00 - 02:00
+            Abierto:
           </Typography>
-          <Tooltip
-            title="Lunes: Cerrado.
-            Martes: 13:00 - 23:30.
-            Miércoles: 13:00 - 23:30.
-            Jueves: 13:00 - 02:00.
-            Viernes: 13:00 - 02:00.
-            Sábado: 13:00 - 02:00.
-            Domingo: 13:00 - 22:00."
+          <Typography
+            sx={{
+              color: "#333333",
+              fontSize: 12,
+              fontWeight: "800",
+              marginRight: 2,
+              fontFamily: "MontserratMedium",
+            }}
+          >
+            13:00 - 02:00
+          </Typography>
+
+          <Typography
+            sx={{
+              color: "#333333",
+              fontSize: 16,
+              fontWeight: "800",
+              marginRight: 2,
+              fontFamily: "MontserratMedium",
+            }}
+            onClick={() => {
+              setShowFullSchedule(!showFullSchedule);
+            }}
+          >
+            {showFullSchedule ? "▲" : "▼"}
+          </Typography>
+        </Grid>
+        {showFullSchedule && (
+          <Grid
+            item
+            xs={12}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
           >
             <Typography
               sx={{
-                color: "#000",
-                fontSize: 16,
+                color: "#333333",
+                fontSize: 12,
                 fontWeight: "800",
                 marginRight: 2,
                 fontFamily: "MontserratMedium",
+                textAlign: "center",
               }}
             >
-              ▼
+              Lunes: Cerrado. <br></br>
+              Martes: 13:00 - 23:30. <br></br>
+              Miércoles: 13:00 - 23:30.<br></br>
+              Jueves: 13:00 - 02:00. <br></br>
+              Viernes: 13:00 - 02:00. <br></br>
+              Sábado: 13:00 - 02:00. <br></br>
+              Domingo: 13:00 - 22:00.<br></br>
             </Typography>
-          </Tooltip>
-        </Grid>
+          </Grid>
+        )}
       </Grid>
       <Grid container sx={{ marginTop: 1 }}>
         <Grid
@@ -174,10 +258,10 @@ const Description = () => {
         >
           <Typography
             sx={{
-              color: "#000",
+              color: "#333333",
               fontSize: 12,
               marginRight: 2,
-              fontFamily: "PoppinsLight",
+              fontFamily: "MontserratMedium",
             }}
           >
             9999-123-456
@@ -207,10 +291,10 @@ const Description = () => {
         >
           <Typography
             sx={{
-              color: "#000",
+              color: "#333333",
               fontSize: 12,
               marginRight: 2,
-              fontFamily: "PoppinsLight",
+              fontFamily: "MontserratMedium",
             }}
           >
             Ver página web

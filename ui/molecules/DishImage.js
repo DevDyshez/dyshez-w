@@ -22,26 +22,39 @@ const RenderItem = ({ item }) => {
         alt={item.id}
         loading="lazy"
       />
-      <ImageListItemBar
-        sx={{
-          bottom: "10%",
-          right: "0",
-          left: "25%",
-          borderTopLeftRadius: 10,
-          borderBottomLeftRadius: 10,
-          paddingTop: 2,
-          paddingBottom: 3,
-          textAlign: "right",
+      <div
+        style={{
+          position: "absolute",
           backgroundColor: " #2D2D2D",
-          height: 20,
-          "& .MuiImageListItemBar-title": {
-            fontSize: 10,
-            fontFamily: "PoppinsRegular",
-          },
+          bottom: 30,
+          right: 0,
+          borderTopLeftRadius: 25,
+          borderBottomLeftRadius: 25,
+          paddingLeft: 10,
+          paddingRight: 10,
+          fontSize: 10,
+          fontFamily: "PoppinsRegular",
+          textAlign: "right",
         }}
-        title={item.name}
-        subtitle={`$${item.price}`}
-      />
+      >
+        {item.name}
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          backgroundColor: " #2D2D2D",
+          bottom: 10,
+          right: 1,
+          borderTopLeftRadius: 25,
+          borderBottomLeftRadius: 25,
+          paddingLeft: 5,
+          paddingRight: 5,
+          fontSize: 10,
+          fontFamily: "PoppinsRegular",
+        }}
+      >
+        ${item.price}
+      </div>
     </ImageListItem>
   );
 };
@@ -51,7 +64,7 @@ const DishImage = ({ id, filteredDishes }) => {
 
   return (
     <ImageList
-      sx={{ width: "100%", height: "100%" }}
+      sx={{ width: "100%", height: "100%", overflow: "hidden" }}
       cols={2}
       rowHeight={170}
       gap={2}

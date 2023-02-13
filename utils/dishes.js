@@ -1,4 +1,4 @@
-import Test from "public/restaurants/bachour.jpg";
+import Test from "public/dishes/roca/test.png";
 import RocaQuesoBrie1 from "public/dishes/roca/quesobrie1.webp";
 import RocaQuesoBrie2 from "public/dishes/roca/quesobrie2.webp";
 import RocaQuesoBrie3 from "public/dishes/roca/quesobrie3.webp";

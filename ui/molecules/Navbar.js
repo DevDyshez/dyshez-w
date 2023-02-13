@@ -33,8 +33,8 @@ export default function ButtonAppBar() {
           >
             <Image
               src={Logo}
-              width={96}
-              height={37}
+              width={90}
+              height={30}
               alt="Logo"
               onClick={() => {
                 router.push("/");

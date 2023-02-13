@@ -37,28 +37,25 @@ export default function CategoriesSquares({
             alt={item.id}
             loading="lazy"
           />
-          <ImageListItemBar
-            sx={{
+          <div
+            style={{
+              position: "absolute",
               backgroundColor: "#fff",
-              height: 20,
-              width: 95,
-              borderTopRightRadius: 20,
-              borderBottomRightRadius: 20,
+              color: "#000",
               bottom: 10,
-              "& .MuiImageListItemBar-title": {
-                fontSize: 11,
-                color: "#000",
-                fontFamily: "PoppinsRegular",
-              },
-              "& .MuiImageListItemBar-titleWrap": {
-                padding: 0,
-                paddingLeft: 1,
-                margin: 0,
-              },
+              left: 0,
+              borderTopRightRadius: 25,
+              borderBottomRightRadius: 25,
+              paddingLeft: 10,
+              paddingRight: 10,
+              fontSize: 13,
+              fontFamily: "PoppinsRegular",
+              textAlign: "left",
+              maxWidth: "85%",
             }}
-            title={item.category}
-            position="bottom"
-          />
+          >
+            {item.category}
+          </div>
         </ImageListItem>
       ))}
     </ImageList>
