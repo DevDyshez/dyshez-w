@@ -29,7 +29,12 @@ const RestaurantHeader = () => {
           <CircularImage src={place.logoUrl} alt="Logo" />
         </Grid>
         <Grid item xs={7}>
-          <Box sx={{ textAlign: "right" }}>
+          <Box
+            sx={{
+              alignItems: "center",
+              textAlign: "right",
+            }}
+          >
             <Typography
               sx={{
                 color: "#000",
@@ -41,23 +46,30 @@ const RestaurantHeader = () => {
             >
               {place.name}
             </Typography>
-            <Typography
-              sx={{
-                color: "#000",
-                fontSize: 14,
-                marginRight: 2,
-                fontFamily: "PoppinsRegular",
+            <Box
+              style={{
+                alignItems: "center",
+                textAlign: "right",
               }}
             >
-              {place.schedule}
-              <Image
-                height={12}
-                width={12}
-                alt="Clock Icon"
-                src={ClockIcon}
-                style={{ marginLeft: 2 }}
-              />
-            </Typography>
+              <Typography
+                sx={{
+                  color: "#000",
+                  fontSize: 14,
+                  marginRight: 2,
+                  fontFamily: "PoppinsRegular",
+                }}
+              >
+                {place.schedule}
+                <Image
+                  height={11}
+                  width={11}
+                  alt="Clock Icon"
+                  src={ClockIcon}
+                  style={{ marginLeft: 2 }}
+                />
+              </Typography>
+            </Box>
           </Box>
           <Box sx={{ marginTop: 1 }}>
             <Grid container>

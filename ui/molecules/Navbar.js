@@ -11,6 +11,7 @@ import Menu from "../../public/icons/menu.png";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import BackIcon from "public/icons/back.png";
+import RocaLogo from "public/rocasmall.png";
 
 export default function ButtonAppBar({ canBack }) {
   const router = useRouter();
@@ -28,19 +29,36 @@ export default function ButtonAppBar({ canBack }) {
       >
         <Toolbar>
           {canBack && (
-            <Image
-              src={BackIcon}
-              width={30}
-              height={30}
-              alt="Back Icon"
-              style={{
-                position: "absolute",
-                marginTop: "5px",
-                top: "auto",
-                bottom: "auto",
-              }}
-              onClick={() => router.back()}
-            />
+            <>
+              <Image
+                src={BackIcon}
+                width={30}
+                height={30}
+                alt="Back Icon"
+                style={{
+                  position: "absolute",
+                  marginTop: "5px",
+                  top: "auto",
+                  bottom: "auto",
+                }}
+                onClick={() => router.back()}
+              />
+
+              <Image
+                src={RocaLogo}
+                width={29}
+                height={29}
+                alt="Roca Logo"
+                style={{
+                  position: "absolute",
+                  marginTop: "5px",
+                  top: "auto",
+                  bottom: "auto",
+                  left: 50,
+                }}
+                onClick={() => router.back()}
+              />
+            </>
           )}
 
           <Typography

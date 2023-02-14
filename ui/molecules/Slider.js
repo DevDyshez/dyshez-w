@@ -4,8 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Box } from "@mui/material";
 import Image from "next/image";
-import PreviousIcon from "public/icons/previous.jpeg";
-import NextIcon from "public/icons/nextarrow.png";
+import PreviousIcon from "public/icons/leftarrow.png";
+import NextIcon from "public/icons/rightarrow.png";
 
 export default function PhotoSlider({ images }) {
   var settings = {
@@ -87,14 +87,14 @@ const NextArrow = (props) => {
         color: "#fff",
         cursor: "pointer",
         position: "absolute",
-        top: "40%",
-        right: 10,
+        top: "44%",
+        right: 15,
         fontSize: 50,
         zIndex: 10,
       }}
       src={NextIcon}
-      height={50}
-      width={20}
+      height={28}
+      width={16}
       alt="Previous Icon"
     />
   );
@@ -109,14 +109,14 @@ const PrevArrow = (props) => {
         color: "#fff",
         cursor: "pointer",
         position: "absolute",
-        top: "40%",
-        left: 10,
+        top: "44%",
+        left: 15,
         fontSize: 50,
         zIndex: 10,
       }}
       src={PreviousIcon}
-      height={50}
-      width={20}
+      height={28}
+      width={16}
       alt="Previous Icon"
     />
   );

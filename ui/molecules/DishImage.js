@@ -37,6 +37,7 @@ const RenderItem = ({ item }) => {
             fontSize: 10,
             fontFamily: "PoppinsRegular",
             textAlign: "right",
+            maxWidth: item.isSeparated ? "70%" : "85%",
           }}
         >
           {item.name}
@@ -69,8 +70,8 @@ const DishImage = ({ id, filteredDishes }) => {
     <ImageList
       sx={{ width: "100%", height: "100%", overflow: "hidden" }}
       cols={2}
-      rowHeight={170}
-      gap={0}
+      rowHeight={200}
+      gap={2}
     >
       {filteredDishes.length > 0
         ? filteredDishes.map((dish) => (

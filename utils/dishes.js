@@ -519,6 +519,7 @@ export const dishes = [
     comments: 2,
     isBoard: false,
     isOneLine: false,
+    isSeparated: true,
   },
   {
     name: "Fetuccini en Salsa de Cacahuate y Camarón",
@@ -535,6 +536,7 @@ export const dishes = [
     comments: 2,
     isBoard: false,
     isOneLine: false,
+    isSeparated: true,
   },
   {
     name: "Tagliatelle con Foie Gras Trufada",
@@ -551,6 +553,7 @@ export const dishes = [
     comments: 2,
     isBoard: false,
     isOneLine: false,
+    isSeparated: true,
   },
   {
     name: "Roca's Fetuccini",
