@@ -128,7 +128,7 @@ export const dishes = [
     isBoard: true,
   },
   {
-    name: "Queso brie empanizado",
+    name: "Queso Brie Empanizado",
     id: "rocaquesobrie",
     restaurantId: "roca",
     description:
@@ -143,7 +143,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Gravlax de salmón noruego",
+    name: "Gravlax de Salmón Noruego",
     id: "rocagravlaxsalmon",
     restaurantId: "roca",
     description:
@@ -171,7 +171,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Coliflor rostizada",
+    name: "Coliflor Rostizada",
     id: "rocacoliflor",
     restaurantId: "roca",
     description:
@@ -186,7 +186,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Kibi de cordero con labne trufado y zatar",
+    name: "Kibi de Cordero con Labne Trufado y Zatar",
     id: "rocakibicordero",
     restaurantId: "roca",
     description:
@@ -200,7 +200,7 @@ export const dishes = [
     comments: 0,
   },
   {
-    name: "Queso fundido natural",
+    name: "Queso Fundido Natural",
     id: "rocaquesofundido",
     restaurantId: "roca",
     description: "Queso de la casa con tortillas artesanales de harina",
@@ -214,7 +214,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Wonton de cerdo",
+    name: "Wonton de Cerdo",
     id: "rocawonton",
     restaurantId: "roca",
     description:
@@ -229,7 +229,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Tartar de res",
+    name: "Tartar de Res",
     id: "rocatartar",
     restaurantId: "roca",
     description:
@@ -244,7 +244,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Tiradito de centro de rib eye",
+    name: "Tiradito de Centro de Rib Eye",
     id: "rocatiradito",
     restaurantId: "roca",
     description:
@@ -273,7 +273,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Pulpo a la yucateca",
+    name: "Pulpo a la Yucateca",
     id: "rocapulpo",
     restaurantId: "roca",
     description:
@@ -288,7 +288,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Caramelos de centro de rib eye (3 pzas)",
+    name: "Caramelos de Centro de Rib Eye (3 pzas)",
     id: "rocacaramelos",
     restaurantId: "roca",
     description:
@@ -303,7 +303,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Centro de rib eye flameado al estilo roca",
+    name: "Centro de Rib Eye Flameado al Estilo Roca",
     id: "rocacentro",
     restaurantId: "roca",
     description:
@@ -318,7 +318,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Hamburguesa de la casa",
+    name: "Hamburguesa de la Casa",
     id: "rocahamburguesa",
     restaurantId: "roca",
     description:
@@ -333,7 +333,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Pechuga de pollo orgánica con zarzamora",
+    name: "Pechuga de Pollo Orgánica con Zarzamora",
     id: "rocapechugaorganica",
     restaurantId: "roca",
     description:
@@ -348,7 +348,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Salmón noruego con costra de pistache",
+    name: "Salmón Noruego con Costra de Pistache",
     id: "rocasalmonpistache",
     restaurantId: "roca",
     description:
@@ -363,7 +363,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Surf and turf",
+    name: "Surf and Turf",
     id: "rocasurf",
     restaurantId: "roca",
     description:
@@ -393,7 +393,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Ensalada de cítricos y frutos secos",
+    name: "Ensalada de Cítricos y Frutos Secos",
     id: "rocacitricos",
     restaurantId: "roca",
     description:
@@ -408,7 +408,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Ensalada césar",
+    name: "Ensalada César",
     id: "rocacesar",
     restaurantId: "roca",
     description:
@@ -423,7 +423,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Ensalada de burrata",
+    name: "Ensalada de Burrata",
     id: "rocaburrata",
     restaurantId: "roca",
     description:
@@ -438,7 +438,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Jugo de carne",
+    name: "Jugo de Carne",
     id: "rocajugo",
     restaurantId: "roca",
     description: "Nuestra versión, elaborado con carne prime y tuétano",
@@ -452,7 +452,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Sopa de cebolla",
+    name: "Sopa de Cebolla",
     id: "rocasopa",
     restaurantId: "roca",
     description:
@@ -467,7 +467,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Risotto negro",
+    name: "Risotto Negro",
     id: "rocarisottonegro",
     restaurantId: "roca",
     description:
@@ -482,7 +482,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Ravioles de ricotta y espinaca",
+    name: "Ravioles de Ricotta y Espinaca",
     id: "rocaravioles",
     restaurantId: "roca",
     description:
@@ -497,7 +497,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Fetuccini en salsa de cacahuate y camarón",
+    name: "Fetuccini en Salsa de Cacahuate y Camarón",
     id: "rocafetuccinicacahuate",
     restaurantId: "roca",
     description:
@@ -512,7 +512,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Tagliatelle con foie gras trufada",
+    name: "Tagliatelle con Foie Gras Trufada",
     id: "rocatagliatelle",
     restaurantId: "roca",
     description:
@@ -527,7 +527,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Roca's fetuccini",
+    name: "Roca's Fetuccini",
     id: "rocafetuccini",
     restaurantId: "roca",
     description:
@@ -542,7 +542,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Risotto de hongos",
+    name: "Risotto de Hongos",
     id: "rocarisotto",
     restaurantId: "roca",
     description:
@@ -571,7 +571,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Barbacoa de costillar",
+    name: "Barbacoa de Costillar",
     id: "rocabarbacoa",
     restaurantId: "roca",
     description: "Costillar en barbacoa.",
@@ -599,7 +599,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Centro de rib eye",
+    name: "Centro de Rib Rye",
     id: "rocacentrore",
     restaurantId: "roca",
     description: "Centro de rib eye",
@@ -655,7 +655,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Mac n cheese con pork belly",
+    name: "Mac n Cheese con Pork Belly",
     id: "rocamac",
     restaurantId: "roca",
     description: "Mac n cheese con pork belly",
@@ -669,7 +669,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Puré de papa",
+    name: "Puré de Papa",
     id: "rocapure",
     restaurantId: "roca",
     description: "Puré de papa",
@@ -683,7 +683,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Papas a la francesa",
+    name: "Papas a la Francesa",
     id: "rocapapas",
     restaurantId: "roca",
     description: "Papas a la francesa",
@@ -697,7 +697,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Espinacas a la crema",
+    name: "Espinacas a la Crema",
     id: "rocaespinacas",
     restaurantId: "roca",
     description: "Espinacas a la crema",
@@ -711,7 +711,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Verduras asadas",
+    name: "Verduras Asadas",
     id: "rocaverduras",
     restaurantId: "roca",
     description: "Verduras asadas",
@@ -725,7 +725,7 @@ export const dishes = [
     isBoard: false,
   },
   {
-    name: "Cebolla asada",
+    name: "Cebolla Asada",
     id: "rocacebolla",
     restaurantId: "roca",
     description: "Cebolla asada",

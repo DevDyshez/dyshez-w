@@ -51,7 +51,7 @@ export default function DishDescription({
               WebkitBoxOrient: "vertical",
               fontSize: 14,
               margin: 2,
-              fontFamily: "MontserratMedium",
+              fontFamily: "MontserratRegular",
             }}
           >
             {description}
@@ -62,27 +62,27 @@ export default function DishDescription({
           xs={4}
           sx={{
             textAlign: "center",
-            height: 100,
+            height: 50,
             paddingTop: 2,
           }}
         >
-          <Image src={SpicyIcon} width={50} height={50} alt="Keto Icon" />
+          <Image src={SpicyIcon} width={26} height={26} alt="Keto Icon" />
         </Grid>
         <Grid
           item
           xs={4}
           sx={{
             textAlign: "center",
-            height: 100,
+            height: 50,
           }}
         >
-          <Image src={KetoIcon} width={82} height={82} alt="Keto Icon" />
+          <Image src={KetoIcon} width={51} height={51} alt="Keto Icon" />
         </Grid>
         <Grid
           item
           xs={4}
           sx={{
-            height: 100,
+            height: 50,
             display: "flex",
             alignItems: "center",
           }}
@@ -94,11 +94,12 @@ export default function DishDescription({
               textAlign: "center",
               color: "#000",
               fontSize: 16,
-              paddingBottom: 2,
               fontFamily: "PoppinsMedium",
+              height: 50,
+              paddingTop: "13px",
             }}
           >
-            ${price}
+            ${price.toFixed(2)}
           </Typography>
         </Grid>
         <Grid
@@ -106,26 +107,26 @@ export default function DishDescription({
           xs={4}
           sx={{
             textAlign: "center",
-            height: 100,
+            height: 50,
           }}
         >
-          <Image src={VeganIcon} width={82} height={82} alt="Keto Icon" />
+          <Image src={VeganIcon} width={51} height={51} alt="Keto Icon" />
         </Grid>
         <Grid
           item
           xs={4}
           sx={{
             textAlign: "center",
-            height: 100,
+            height: 50,
           }}
         >
-          <Image src={GlutenFreeIcon} width={82} height={82} alt="Keto Icon" />
+          <Image src={GlutenFreeIcon} width={51} height={51} alt="Keto Icon" />
         </Grid>
         <Grid
           item
           xs={4}
           sx={{
-            height: 100,
+            height: 50,
             display: "flex",
             alignItems: "center",
           }}
@@ -137,8 +138,9 @@ export default function DishDescription({
               textAlign: "center",
               color: "#666666",
               fontSize: 13,
-              paddingBottom: 2,
               fontFamily: "PoppinsMedium",
+              height: 50,
+              paddingTop: "15px",
             }}
           >
             {callories} kcal

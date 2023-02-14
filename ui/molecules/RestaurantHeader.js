@@ -5,7 +5,6 @@ import Grid from "@mui/material/Grid";
 import CircularImage from "./CircularImage";
 import BostonsLogo from "../../public/restaurants/bostons.png";
 import Typography from "@mui/material/Typography";
-import ClockIcon from "../../public/icons/basket.png";
 import { getPlace } from "../../utils/places";
 import styles from "../../src/styles/Home.module.css";
 import Image from "next/image";
@@ -15,6 +14,7 @@ import ReservationIcon from "../../public/icons/reservation.png";
 import HeartIcon from "../../public/icons/newheart.png";
 import { useRouter } from "next/router";
 import Description from "./Description";
+import ClockIcon from "public/icons/clock.png";
 
 const RestaurantHeader = () => {
   const place = getPlace("roca");
@@ -36,7 +36,7 @@ const RestaurantHeader = () => {
                 fontSize: 20,
                 fontWeight: "800",
                 marginRight: 2,
-                fontFamily: "MontserratMedium",
+                fontFamily: "MontserratBold",
               }}
             >
               {place.name}
@@ -44,22 +44,30 @@ const RestaurantHeader = () => {
             <Typography
               sx={{
                 color: "#000",
-                fontSize: 12,
+                fontSize: 14,
                 marginRight: 2,
                 fontFamily: "PoppinsRegular",
               }}
             >
               {place.schedule}
+              <Image
+                height={12}
+                width={12}
+                alt="Clock Icon"
+                src={ClockIcon}
+                style={{ marginLeft: 2 }}
+              />
             </Typography>
           </Box>
           <Box sx={{ marginTop: 1 }}>
             <Grid container>
+              <Grid item xs={4} />
               <Grid
                 item
-                xs={3}
+                xs={2}
                 sx={{
                   display: "flex",
-                  justifyContent: "center",
+                  justifyContent: "start",
                   alignItems: "center",
                 }}
               >
@@ -75,10 +83,10 @@ const RestaurantHeader = () => {
               </Grid>
               <Grid
                 item
-                xs={3}
+                xs={2}
                 sx={{
                   display: "flex",
-                  justifyContent: "center",
+                  justifyContent: "start",
                   alignItems: "center",
                 }}
                 onClick={() => setIsDescriptionOpen(!isDescriptionOpen)}
@@ -92,10 +100,10 @@ const RestaurantHeader = () => {
               </Grid>
               <Grid
                 item
-                xs={3}
+                xs={2}
                 sx={{
                   display: "flex",
-                  justifyContent: "center",
+                  justifyContent: "start",
                   alignItems: "center",
                 }}
               >
@@ -108,10 +116,10 @@ const RestaurantHeader = () => {
               </Grid>
               <Grid
                 item
-                xs={3}
+                xs={2}
                 sx={{
                   display: "flex",
-                  justifyContent: "center",
+                  justifyContent: "start",
                   alignItems: "center",
                 }}
               >

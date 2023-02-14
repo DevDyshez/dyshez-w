@@ -102,6 +102,21 @@ a {
 }
 
 @font-face {
+  font-family: "MontserratBold";
+  src: url("../../public/fonts/MontserratBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../../public/fonts/MontserratRegular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
   font-family: "PoppinsRegular";
   src: url("../../public/fonts/PoppinsRegular.ttf");
   font-weight: normal;

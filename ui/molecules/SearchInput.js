@@ -20,7 +20,7 @@ const SearchInput = ({ setSearchLabel, filterMenu, searchLabel }) => {
           sx={{
             backgroundColor: "#fff",
             borderRadius: 15,
-            paddingRight: 1,
+            paddingRight: 2,
             paddingLeft: 1,
             height: 38,
             width: 376,

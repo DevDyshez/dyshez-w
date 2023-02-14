@@ -67,7 +67,7 @@ export default function PromoDescription({
               WebkitBoxOrient: "vertical",
               fontSize: 12,
               margin: 2,
-              fontFamily: "MontserratMedium",
+              fontFamily: "MontserratRegular",
             }}
           >
             {firstParagraph}

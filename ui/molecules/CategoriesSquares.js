@@ -52,7 +52,7 @@ export default function CategoriesSquares({
               left: 0,
               borderTopRightRadius: 25,
               borderBottomRightRadius: 25,
-              paddingLeft: 10,
+              paddingLeft: 5,
               paddingRight: 10,
               fontSize: 13,
               fontFamily: "PoppinsRegular",
