@@ -1,6 +1,4 @@
-import RocaQuesoBrie1 from "public/dishes/roca/quesobrie1.webp";
-import RocaQuesoBrie2 from "public/dishes/roca/quesobrie2.webp";
-import RocaQuesoBrie3 from "public/dishes/roca/quesobrie3.webp";
+import Promo1 from "public/promo1.jpg";
 
 export const getPromo = (id) => {
   return promos.find((item) => item.id === id);
@@ -10,7 +8,7 @@ export const promos = [
   {
     name: "Promoción Test 1",
     id: "test1",
-    imageUrl: [RocaQuesoBrie1],
+    imageUrl: [Promo1],
     vigency: "Hasta agotar existencias",
     firstParagraph:
       "En la compra de una bebida grande obtén una segunda bebida participante de cortesía. ",
@@ -20,7 +18,7 @@ export const promos = [
   {
     name: "Promoción Test 2",
     id: "test1",
-    imageUrl: [RocaQuesoBrie2],
+    imageUrl: [Promo1],
     vigency: "Hasta agotar existencias",
     firstParagraph:
       "En la compra de una bebida grande obtén una segunda bebida participante de cortesía. ",
@@ -30,7 +28,7 @@ export const promos = [
   {
     name: "Promoción Test 3",
     id: "test1",
-    imageUrl: [RocaQuesoBrie3],
+    imageUrl: [Promo1],
     vigency: "Hasta agotar existencias",
     firstParagraph:
       "En la compra de una bebida grande obtén una segunda bebida participante de cortesía. ",

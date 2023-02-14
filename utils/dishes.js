@@ -1,4 +1,5 @@
 import Test from "public/dishes/roca/test.png";
+import PinkIcon from "public/pinkicon.png";
 import RocaQuesoBrie1 from "public/dishes/roca/quesobrie1.webp";
 import RocaQuesoBrie2 from "public/dishes/roca/quesobrie2.webp";
 import RocaQuesoBrie3 from "public/dishes/roca/quesobrie3.webp";
@@ -120,8 +121,8 @@ export const dishes = [
     callories: 200,
     price: 260,
     category: "Dyshez Board",
-    imageUrl: Test,
-    images: [Test],
+    imageUrl: PinkIcon,
+    images: [PinkIcon],
     likes: 5,
     comments: 2,
     isBoard: true,
