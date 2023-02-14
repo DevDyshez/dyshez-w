@@ -11,7 +11,7 @@ export default function Dish() {
 
   return (
     <div style={{ backgroundColor: "#fff", minHeight: 850 }}>
-      <Navbar />
+      <Navbar canBack />
       <PhotoSlider images={dish?.images} />
       <DishDescription
         name={dish?.name}

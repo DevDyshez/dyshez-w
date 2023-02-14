@@ -186,7 +186,7 @@ const Description = () => {
               fontFamily: "MontserratMedium",
             }}
           >
-            13:00 - 02:00
+            13:00 - 23:30
           </Typography>
 
           <Typography

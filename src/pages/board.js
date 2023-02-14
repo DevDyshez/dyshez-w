@@ -17,7 +17,7 @@ export default function Board() {
 
   return (
     <div style={{ backgroundColor: "#fff", minHeight: 850 }}>
-      <Navbar />
+      <Navbar canBack />
       <Box
         style={{
           backgroundColor: "#fff",

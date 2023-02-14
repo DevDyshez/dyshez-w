@@ -10,8 +10,9 @@ import Logo from "../../public/logo-pink.png";
 import Menu from "../../public/icons/menu.png";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import BackIcon from "public/icons/back.png";
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar({ canBack }) {
   const router = useRouter();
   const [state, setState] = useState(false);
 
@@ -26,6 +27,22 @@ export default function ButtonAppBar() {
         sx={{ backgroundColor: "#FFF", height: 60, justifyContent: "center" }}
       >
         <Toolbar>
+          {canBack && (
+            <Image
+              src={BackIcon}
+              width={30}
+              height={30}
+              alt="Back Icon"
+              style={{
+                position: "absolute",
+                marginTop: "5px",
+                top: "auto",
+                bottom: "auto",
+              }}
+              onClick={() => router.back()}
+            />
+          )}
+
           <Typography
             variant="h6"
             component="div"

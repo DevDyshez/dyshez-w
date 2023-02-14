@@ -49,7 +49,7 @@ export default function DishDescription({
               display: "-webkit-box",
               overflow: "hidden",
               WebkitBoxOrient: "vertical",
-              fontSize: 14,
+              fontSize: 13,
               margin: 2,
               fontFamily: "MontserratRegular",
             }}

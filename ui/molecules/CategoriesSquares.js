@@ -56,8 +56,7 @@ export default function CategoriesSquares({
               paddingRight: 10,
               fontSize: 13,
               fontFamily: "PoppinsRegular",
-              textAlign: "left",
-              maxWidth: "85%",
+              maxWidth: item.isOneLine ? "85%" : "63%",
             }}
           >
             {item.category}

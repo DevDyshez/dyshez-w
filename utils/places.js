@@ -14,7 +14,7 @@ export const places = [
     type: "Restaurante",
     id: "roca",
     logoUrl: RocaLogo,
-    schedule: "12:00 - 01:00",
+    schedule: "13:00 - 23:30",
     description:
       "Con una original combinación entre clásico y lo contemporáneo, ROCA Steakhouse es un inigualable restaurante gourmet en Mérida, Yucatán, ideal para los amantes de los cortes de carne prime.",
     address:

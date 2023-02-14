@@ -65,7 +65,7 @@ export default function PromoDescription({
               display: "-webkit-box",
               overflow: "hidden",
               WebkitBoxOrient: "vertical",
-              fontSize: 12,
+              fontSize: 13,
               margin: 2,
               fontFamily: "MontserratRegular",
             }}
@@ -85,7 +85,7 @@ export default function PromoDescription({
               display: "-webkit-box",
               overflow: "hidden",
               WebkitBoxOrient: "vertical",
-              fontSize: 12,
+              fontSize: 13,
               margin: 2,
               fontFamily: "MontserratMedium",
             }}

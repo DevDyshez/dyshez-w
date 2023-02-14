@@ -126,6 +126,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: true,
+    isOneLine: true,
   },
   {
     name: "Queso Brie Empanizado",
@@ -141,6 +142,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Gravlax de Salmón Noruego",
@@ -169,6 +171,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Coliflor Rostizada",
@@ -184,6 +187,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Kibi de Cordero con Labne Trufado y Zatar",
@@ -212,6 +216,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Wonton de Cerdo",
@@ -227,6 +232,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Tartar de Res",
@@ -242,6 +248,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Tiradito de Centro de Rib Eye",
@@ -257,6 +264,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Guacamole",
@@ -271,6 +279,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Pulpo a la Yucateca",
@@ -286,6 +295,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Caramelos de Centro de Rib Eye (3 pzas)",
@@ -301,6 +311,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Centro de Rib Eye Flameado al Estilo Roca",
@@ -316,6 +327,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Hamburguesa de la Casa",
@@ -331,6 +343,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Pechuga de Pollo Orgánica con Zarzamora",
@@ -346,6 +359,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Salmón Noruego con Costra de Pistache",
@@ -361,6 +375,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Surf and Turf",
@@ -376,6 +391,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Caldo Roca",
@@ -391,6 +407,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: false,
   },
   {
     name: "Ensalada de Cítricos y Frutos Secos",
@@ -406,6 +423,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: false,
   },
   {
     name: "Ensalada César",
@@ -421,6 +439,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: false,
   },
   {
     name: "Ensalada de Burrata",
@@ -436,6 +455,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: false,
   },
   {
     name: "Jugo de Carne",
@@ -450,6 +470,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: false,
   },
   {
     name: "Sopa de Cebolla",
@@ -465,6 +486,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: false,
   },
   {
     name: "Risotto Negro",
@@ -480,6 +502,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: false,
   },
   {
     name: "Ravioles de Ricotta y Espinaca",
@@ -495,6 +518,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: false,
   },
   {
     name: "Fetuccini en Salsa de Cacahuate y Camarón",
@@ -510,6 +534,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: false,
   },
   {
     name: "Tagliatelle con Foie Gras Trufada",
@@ -525,6 +550,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: false,
   },
   {
     name: "Roca's Fetuccini",
@@ -540,6 +566,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: false,
   },
   {
     name: "Risotto de Hongos",
@@ -555,6 +582,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: false,
   },
   {
     name: "Rib Eye",
@@ -569,6 +597,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Barbacoa de Costillar",
@@ -583,6 +612,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Spinalis",
@@ -597,6 +627,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Centro de Rib Rye",
@@ -611,6 +642,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Cowboy",
@@ -625,6 +657,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Filete",
@@ -639,6 +672,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "New York",
@@ -653,6 +687,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Mac n Cheese con Pork Belly",
@@ -667,6 +702,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Puré de Papa",
@@ -681,6 +717,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Papas a la Francesa",
@@ -695,6 +732,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Espinacas a la Crema",
@@ -709,6 +747,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Verduras Asadas",
@@ -723,6 +762,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Cebolla Asada",
@@ -737,6 +777,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Coca Cola",
@@ -751,6 +792,7 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
   {
     name: "Cerveza Montejo",
@@ -765,5 +807,6 @@ export const dishes = [
     likes: 5,
     comments: 2,
     isBoard: false,
+    isOneLine: true,
   },
 ];

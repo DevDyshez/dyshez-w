@@ -70,7 +70,7 @@ const DishImage = ({ id, filteredDishes }) => {
       sx={{ width: "100%", height: "100%", overflow: "hidden" }}
       cols={2}
       rowHeight={170}
-      gap={2}
+      gap={0}
     >
       {filteredDishes.length > 0
         ? filteredDishes.map((dish) => (
