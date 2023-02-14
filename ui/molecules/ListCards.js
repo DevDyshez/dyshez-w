@@ -106,7 +106,7 @@ const RenderItem = ({ item }) => {
               paddingRight: 30,
             }}
           >
-            ${item.price.toFixed(2)}
+            ${item?.price?.toFixed(2)}
           </Grid>
         </Grid>
         <Divider

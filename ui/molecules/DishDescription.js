@@ -99,7 +99,7 @@ export default function DishDescription({
               paddingTop: "13px",
             }}
           >
-            ${price.toFixed(2)}
+            ${price?.toFixed(2)}
           </Typography>
         </Grid>
         <Grid
