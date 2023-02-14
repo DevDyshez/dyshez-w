@@ -207,7 +207,7 @@ const Description = () => {
         {showFullSchedule && (
           <Grid
             item
-            xs={12}
+            xs={10}
             sx={{
               display: "flex",
               justifyContent: "center",
@@ -221,7 +221,7 @@ const Description = () => {
                 fontWeight: "800",
                 marginRight: 2,
                 fontFamily: "MontserratMedium",
-                textAlign: "center",
+                textAlign: "left",
               }}
             >
               Lunes: Cerrado. <br></br>
