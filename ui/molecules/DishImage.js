@@ -38,6 +38,7 @@ const RenderItem = ({ item }) => {
             fontFamily: "PoppinsRegular",
             textAlign: "right",
             maxWidth: item.isSeparated ? "70%" : "85%",
+            color: "#fff",
           }}
         >
           {item.name}
@@ -54,6 +55,7 @@ const RenderItem = ({ item }) => {
             paddingRight: 5,
             fontSize: 10,
             fontFamily: "PoppinsRegular",
+            color: "#fff",
           }}
         >
           ${item.price}
