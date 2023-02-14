@@ -6,6 +6,7 @@ import KetoIcon from "public/icons/keto.png";
 import KCalIcon from "public/icons/kcal.png";
 import GlutenFreeIcon from "public/icons/glutenfree.png";
 import VeganIcon from "public/icons/vegan.png";
+import SpicyIcon from "public/icons/spiciest.png";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 
@@ -24,12 +25,13 @@ export default function DishDescription({
             sx={{
               flexGrow: 1,
               justifyContent: "center",
-              textAlign: "center",
+              textAlign: "left",
               color: "#000",
               WebkitLineClamp: 2,
               fontSize: 16,
               fontWeight: 700,
               fontFamily: "PoppinsSemiBold",
+              marginLeft: 2,
             }}
           >
             {name}
@@ -41,7 +43,7 @@ export default function DishDescription({
             sx={{
               flexGrow: 1,
               justifyContent: "center",
-              textAlign: "center",
+              textAlign: "left",
               color: "#000",
               WebkitLineClamp: 3,
               display: "-webkit-box",
@@ -61,9 +63,10 @@ export default function DishDescription({
           sx={{
             textAlign: "center",
             height: 100,
+            paddingTop: 2,
           }}
         >
-          <Image src={KCalIcon} width={82} height={82} alt="Keto Icon" />
+          <Image src={SpicyIcon} width={50} height={50} alt="Keto Icon" />
         </Grid>
         <Grid
           item

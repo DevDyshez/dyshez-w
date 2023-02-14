@@ -52,6 +52,7 @@ const RenderItem = ({ item }) => {
               WebkitLineClamp: 2,
               fontSize: 12,
               fontFamily: "PoppinsLight",
+              paddingLeft: 4,
             }}
           >
             {item.description}
@@ -63,7 +64,7 @@ const RenderItem = ({ item }) => {
           style={{
             display: "flex",
             justifyContent: "flex-end",
-            paddingRight: 10,
+            paddingRight: 25,
           }}
         >
           <Image
@@ -85,6 +86,7 @@ const RenderItem = ({ item }) => {
               color: "#000",
               fontSize: 12,
               fontFamily: "PoppinsMedium",
+              paddingLeft: 4,
             }}
           >
             {item.callories} kCal
@@ -100,12 +102,22 @@ const RenderItem = ({ item }) => {
             fontSize: 12,
             marginTop: 5,
             fontFamily: "PoppinsMedium",
+            paddingRight: 30,
           }}
         >
-          ${item.price}
+          ${item.price.toFixed(2)}
         </Grid>
       </Grid>
-      <Divider sx={{ backgroundColor: "#dddddd", marginTop: 2, height: 2 }} />
+      <Divider
+        sx={{
+          backgroundColor: "#dddddd",
+          marginTop: 2,
+          height: 2,
+          width: 297,
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      />
     </Box>
   );
 };

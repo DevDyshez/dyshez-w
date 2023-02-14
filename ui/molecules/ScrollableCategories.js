@@ -11,6 +11,11 @@ const ScrollableCategories = ({
   categorySelected,
 }) => {
   const categories = getMenuCategories(id);
+
+  const handleClick = (category) => {
+    handleCategorySelect(category);
+  };
+
   return (
     <div
       style={{
@@ -27,9 +32,16 @@ const ScrollableCategories = ({
             key={item.name}
             label={item.category}
             onClick={() => {
-              handleCategorySelect(item.category);
+              handleClick(item.category);
             }}
             variant={item.category === categorySelected ? "outlined" : "filled"}
+            style={{
+              backgroundColor:
+                item.category === categorySelected ? "black" : "white",
+              color: item.category === categorySelected ? "white" : "black",
+              border: "1px solid black",
+              borderRadius: 10,
+            }}
             sx={{
               fontFamily: "PoppinsSemiBold",
               fontSize: 12,

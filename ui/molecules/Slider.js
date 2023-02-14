@@ -9,6 +9,8 @@ export default function PhotoSlider({ images }) {
   var settings = {
     dots: false,
     infinite: true,
+    fade: true,
+    cssEase: "linear",
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,

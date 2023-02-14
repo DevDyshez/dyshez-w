@@ -2,10 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import Box from "@mui/material/Box";
 import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
 import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
-import TextField from "@mui/material/TextField";
 import SearchIcon from "../../public/icons/search.png";
 import Image from "next/image";
 
@@ -16,14 +14,19 @@ const SearchInput = ({ setSearchLabel, filterMenu, searchLabel }) => {
   };
 
   return (
-    <Box sx={{ "& > :not(style)": { m: 1, width: "96%" } }}>
+    <Box sx={{ "& > :not(style)": { m: 1 } }}>
       <FormControl variant="standard">
         <Input
           sx={{
-            backgroundColor: "#f2f4f6",
+            backgroundColor: "#fff",
             borderRadius: 15,
             paddingRight: 1,
             paddingLeft: 1,
+            height: 38,
+            width: 376,
+            marginRight: "auto",
+            marginLeft: "auto",
+            border: "1px solid #DBDBDB",
           }}
           fullWidth
           id="search"

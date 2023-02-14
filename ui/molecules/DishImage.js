@@ -21,6 +21,7 @@ const RenderItem = ({ item }) => {
         srcSet={`${item.imageUrl.src}?w=164&h=170&fit=crop&auto=format&dpr=2 2x`}
         alt={item.id}
         loading="lazy"
+        style={{ borderRadius: 3 }}
       />
       <div
         style={{
