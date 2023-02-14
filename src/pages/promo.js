@@ -15,9 +15,9 @@ export default function Dish() {
       <PhotoSlider images={promo?.imageUrl} />
       <PromoDescription
         name={promo?.name}
-        vigency={promo.vigency}
-        firstParagraph={promo.firstParagraph}
-        secondParagraph={promo.secondParagraph}
+        vigency={promo?.vigency}
+        firstParagraph={promo?.firstParagraph}
+        secondParagraph={promo?.secondParagraph}
       />
     </div>
   );
