@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Box } from "@mui/material";
 import Image from "next/image";
+import PreviousIcon from "public/icons/previous.jpeg";
+import NextIcon from "public/icons/nextarrow.png";
 
 export default function PhotoSlider({ images }) {
   var settings = {
@@ -14,6 +16,48 @@ export default function PhotoSlider({ images }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    dots: true,
+    appendDots: (dots) => (
+      <div
+        style={{
+          bottom: 20,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          zIndex: 10,
+        }}
+      >
+        <ul
+          style={{
+            margin: "0",
+            padding: "0",
+            display: "flex",
+            listStyle: "none",
+            alignItems: "center",
+            color: "red",
+          }}
+        >
+          {dots.map((dot) => (
+            <li
+              key={dot}
+              style={{
+                color: "white",
+                backgroundColor:
+                  dot.props.className === "slick-active"
+                    ? "white"
+                    : "transparent",
+                border: "1px solid #fff",
+                borderRadius: 10,
+                width: 10,
+                height: 10,
+              }}
+            ></li>
+          ))}
+        </ul>
+      </div>
+    ),
   };
 
   return (
@@ -33,3 +77,47 @@ export default function PhotoSlider({ images }) {
     </Box>
   );
 }
+
+const NextArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <Image
+      onClick={onClick}
+      style={{
+        color: "#fff",
+        cursor: "pointer",
+        position: "absolute",
+        top: "40%",
+        right: 10,
+        fontSize: 50,
+        zIndex: 10,
+      }}
+      src={NextIcon}
+      height={50}
+      width={20}
+      alt="Previous Icon"
+    />
+  );
+};
+
+const PrevArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <Image
+      onClick={onClick}
+      style={{
+        color: "#fff",
+        cursor: "pointer",
+        position: "absolute",
+        top: "40%",
+        left: 10,
+        fontSize: 50,
+        zIndex: 10,
+      }}
+      src={PreviousIcon}
+      height={50}
+      width={20}
+      alt="Previous Icon"
+    />
+  );
+};

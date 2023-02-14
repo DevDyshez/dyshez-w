@@ -31,7 +31,7 @@ export default function DishDescription({
               fontSize: 16,
               fontWeight: 700,
               fontFamily: "PoppinsSemiBold",
-              marginLeft: 2,
+              marginLeft: 4,
             }}
           >
             {name}
@@ -51,6 +51,7 @@ export default function DishDescription({
               WebkitBoxOrient: "vertical",
               fontSize: 13,
               margin: 2,
+              marginLeft: 4,
               fontFamily: "MontserratRegular",
             }}
           >
