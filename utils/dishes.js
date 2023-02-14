@@ -100,7 +100,9 @@ export const getMenuCategories = (id) => {
 
 export const filterMenu = (id, category) => {
   const dishes = getMenu(id);
-  const dishesToShow = dishes.filter((dish) => dish.category === category);
+  const dishesToShow = dishes.filter(
+    (dish) => dish.category === category && !dish.isBoard
+  );
   return dishesToShow;
 };
 
@@ -110,6 +112,20 @@ export const getDish = (id) => {
 
 export const dishes = [
   // Roca
+  {
+    name: "Dyshez Board",
+    id: "dyshezboard",
+    restaurantId: "roca",
+    description: "Test",
+    callories: 200,
+    price: 260,
+    category: "Dyshez Board",
+    imageUrl: Test,
+    images: [Test],
+    likes: 5,
+    comments: 2,
+    isBoard: true,
+  },
   {
     name: "Queso brie empanizado",
     id: "rocaquesobrie",
@@ -123,6 +139,7 @@ export const dishes = [
     images: [RocaQuesoBrie1, RocaQuesoBrie2, RocaQuesoBrie3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Gravlax de salmón noruego",
@@ -150,6 +167,7 @@ export const dishes = [
     images: [RocaOstiones1, RocaOstiones2, RocaOstiones3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Coliflor rostizada",
@@ -164,6 +182,7 @@ export const dishes = [
     images: [Coliflor1, Coliflor2],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Kibi de cordero con labne trufado y zatar",
@@ -191,6 +210,7 @@ export const dishes = [
     images: [QuesoFundido1, QuesoFundido2],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Wonton de cerdo",
@@ -205,6 +225,7 @@ export const dishes = [
     images: [Wonton1, Wonton2, Wonton3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Tartar de res",
@@ -219,6 +240,7 @@ export const dishes = [
     images: [Tartar1],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Tiradito de centro de rib eye",
@@ -233,6 +255,7 @@ export const dishes = [
     images: [Tiradito1, Tiradito2],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Guacamole",
@@ -246,6 +269,7 @@ export const dishes = [
     images: [Guacamole1],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Pulpo a la yucateca",
@@ -260,6 +284,7 @@ export const dishes = [
     images: [PulpoYuc1],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Caramelos de centro de rib eye (3 pzas)",
@@ -274,6 +299,7 @@ export const dishes = [
     images: [Caramelo1],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Centro de rib eye flameado al estilo roca",
@@ -288,6 +314,7 @@ export const dishes = [
     images: [Centro1],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Hamburguesa de la casa",
@@ -302,6 +329,7 @@ export const dishes = [
     images: [Hamburguesa1, Hamburguesa2],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Pechuga de pollo orgánica con zarzamora",
@@ -316,6 +344,7 @@ export const dishes = [
     images: [PechugaPollo1, PechugaPollo2, PechugaPollo3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Salmón noruego con costra de pistache",
@@ -330,6 +359,7 @@ export const dishes = [
     images: [SalmonPistache1, SalmonPistache2, SalmonPistache3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Surf and turf",
@@ -344,6 +374,7 @@ export const dishes = [
     images: [SurfAndTurf1, SurfAndTurf2, SurfAndTurf3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Caldo Roca",
@@ -358,6 +389,7 @@ export const dishes = [
     images: [CaldoRoca1, CaldoRoca2, CaldoRoca3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Ensalada de cítricos y frutos secos",
@@ -372,6 +404,7 @@ export const dishes = [
     images: [Test],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Ensalada césar",
@@ -386,6 +419,7 @@ export const dishes = [
     images: [EnsaladaCesar1],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Ensalada de burrata",
@@ -400,6 +434,7 @@ export const dishes = [
     images: [EnsaladaBurrata1, EnsaladaBurrata2],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Jugo de carne",
@@ -413,6 +448,7 @@ export const dishes = [
     images: [Test],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Sopa de cebolla",
@@ -427,6 +463,7 @@ export const dishes = [
     images: [SopaCebolla1, SopaCebolla2],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Risotto negro",
@@ -441,6 +478,7 @@ export const dishes = [
     images: [RisottoNegro1, RisottoNegro2, RisottoNegro3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Ravioles de ricotta y espinaca",
@@ -455,6 +493,7 @@ export const dishes = [
     images: [Ravioles1, Ravioles2],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Fetuccini en salsa de cacahuate y camarón",
@@ -469,6 +508,7 @@ export const dishes = [
     images: [FettucciniCacahuate1, FettucciniCacahuate2, FettucciniCacahuate3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Tagliatelle con foie gras trufada",
@@ -483,6 +523,7 @@ export const dishes = [
     images: [Test],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Roca's fetuccini",
@@ -497,6 +538,7 @@ export const dishes = [
     images: [FetucciniRoca1, FetucciniRoca2],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Risotto de hongos",
@@ -511,6 +553,7 @@ export const dishes = [
     images: [Test],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Rib Eye",
@@ -524,6 +567,7 @@ export const dishes = [
     images: [RibEye1, RibEye2, RibEye3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Barbacoa de costillar",
@@ -537,6 +581,7 @@ export const dishes = [
     images: [Barbacoa1, Barbacoa2, Barbacoa3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Spinalis",
@@ -550,6 +595,7 @@ export const dishes = [
     images: [Test],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Centro de rib eye",
@@ -563,6 +609,7 @@ export const dishes = [
     images: [Test],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Cowboy",
@@ -576,6 +623,7 @@ export const dishes = [
     images: [Cowboy1, Cowboy2, Cowboy3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Filete",
@@ -589,6 +637,7 @@ export const dishes = [
     images: [Test],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "New York",
@@ -602,6 +651,7 @@ export const dishes = [
     images: [NewYork1, NewYork2, NewYork3],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Mac n cheese con pork belly",
@@ -615,6 +665,7 @@ export const dishes = [
     images: [MacNCheese],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Puré de papa",
@@ -628,6 +679,7 @@ export const dishes = [
     images: [Test],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Papas a la francesa",
@@ -641,6 +693,7 @@ export const dishes = [
     images: [PapasFrancesa1, PapasFrancesa2],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Espinacas a la crema",
@@ -654,6 +707,7 @@ export const dishes = [
     images: [Espinacas1, Espinacas2],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Verduras asadas",
@@ -667,6 +721,7 @@ export const dishes = [
     images: [Verduras1, Verduras2],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Cebolla asada",
@@ -680,6 +735,7 @@ export const dishes = [
     images: [Cebolla1],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Coca Cola",
@@ -693,6 +749,7 @@ export const dishes = [
     images: [Test],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
   {
     name: "Cerveza Montejo",
@@ -706,5 +763,6 @@ export const dishes = [
     images: [Test],
     likes: 5,
     comments: 2,
+    isBoard: false,
   },
 ];

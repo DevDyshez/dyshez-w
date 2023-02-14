@@ -6,6 +6,7 @@ import Image from "next/image";
 import Bachour from "public/restaurants/bachour.jpg";
 import { getMenuCategories } from "utils/dishes";
 import styles from "@/styles/Home.module.css";
+import { useRouter } from "next/router";
 
 export default function CategoriesSquares({
   id,
@@ -13,10 +14,15 @@ export default function CategoriesSquares({
   handleChange,
 }) {
   const categories = getMenuCategories("roca");
+  const router = useRouter();
 
   const handleClick = (category) => {
-    handleCategorySelect(category);
-    handleChange("click", 2);
+    if (category !== "Dyshez Board") {
+      handleCategorySelect(category);
+      handleChange("click", 2);
+    } else {
+      router.push("/board");
+    }
   };
 
   return (
@@ -40,8 +46,8 @@ export default function CategoriesSquares({
           <div
             style={{
               position: "absolute",
-              backgroundColor: "#fff",
-              color: "#000",
+              backgroundColor: item.id === "dyshezboard" ? "#d5145a" : "#fff",
+              color: item.id === "dyshezboard" ? "#fff" : "#000",
               bottom: 10,
               left: 0,
               borderTopRightRadius: 25,

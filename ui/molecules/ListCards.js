@@ -13,112 +13,114 @@ import { useRouter } from "next/router";
 const RenderItem = ({ item }) => {
   const router = useRouter();
   return (
-    <Box
-      sx={{
-        marginVertical: 2,
-        padding: 2,
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
-      <Typography
-        component="div"
+    !item.isBoard && (
+      <Box
         sx={{
-          flexGrow: 1,
-          display: "flex",
+          marginVertical: 2,
+          padding: 2,
           justifyContent: "center",
-          textAlign: "center",
-          color: "#000",
-          fontSize: 16,
-          marginBottom: 2,
-          fontFamily: "PoppinsSemiBoldItalic",
+          alignItems: "center",
+          flexDirection: "column",
         }}
       >
-        {item.name}
-      </Typography>
-      <Grid container>
-        <Grid item xs={10}>
-          <Typography
-            component="div"
-            sx={{
-              flexGrow: 1,
-              justifyContent: "center",
-              textAlign: "center",
-              color: "#000",
-              display: "-webkit-box",
-              overflow: "hidden",
-              WebkitBoxOrient: "vertical",
-              WebkitLineClamp: 2,
-              fontSize: 12,
-              fontFamily: "PoppinsLight",
-              paddingLeft: 4,
-            }}
-          >
-            {item.description}
-          </Typography>
-        </Grid>
-        <Grid
-          item
-          xs={2}
-          style={{
+        <Typography
+          component="div"
+          sx={{
+            flexGrow: 1,
             display: "flex",
-            justifyContent: "flex-end",
-            paddingRight: 25,
-          }}
-        >
-          <Image
-            src={NextIcon}
-            alt="Next Icon"
-            height={25}
-            width={25}
-            onClick={() => {
-              router.push(`/dish?id=${item.id}`);
-            }}
-          />
-        </Grid>
-        <Grid item xs={6} style={{ marginTop: 5 }}>
-          <Typography
-            component="div"
-            sx={{
-              display: "flex",
-              justifyContent: "flex-start",
-              color: "#000",
-              fontSize: 12,
-              fontFamily: "PoppinsMedium",
-              paddingLeft: 4,
-            }}
-          >
-            {item.callories} kCal
-          </Typography>
-        </Grid>
-        <Grid
-          item
-          xs={6}
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
+            justifyContent: "center",
+            textAlign: "center",
             color: "#000",
-            fontSize: 12,
-            marginTop: 5,
-            fontFamily: "PoppinsMedium",
-            paddingRight: 30,
+            fontSize: 16,
+            marginBottom: 2,
+            fontFamily: "PoppinsSemiBoldItalic",
           }}
         >
-          ${item.price.toFixed(2)}
+          {item.name}
+        </Typography>
+        <Grid container>
+          <Grid item xs={10}>
+            <Typography
+              component="div"
+              sx={{
+                flexGrow: 1,
+                justifyContent: "center",
+                textAlign: "center",
+                color: "#000",
+                display: "-webkit-box",
+                overflow: "hidden",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: 2,
+                fontSize: 12,
+                fontFamily: "PoppinsLight",
+                paddingLeft: 4,
+              }}
+            >
+              {item.description}
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            xs={2}
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              paddingRight: 25,
+            }}
+          >
+            <Image
+              src={NextIcon}
+              alt="Next Icon"
+              height={25}
+              width={25}
+              onClick={() => {
+                router.push(`/dish?id=${item.id}`);
+              }}
+            />
+          </Grid>
+          <Grid item xs={6} style={{ marginTop: 5 }}>
+            <Typography
+              component="div"
+              sx={{
+                display: "flex",
+                justifyContent: "flex-start",
+                color: "#000",
+                fontSize: 12,
+                fontFamily: "PoppinsMedium",
+                paddingLeft: 4,
+              }}
+            >
+              {item.callories} kCal
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            xs={6}
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              color: "#000",
+              fontSize: 12,
+              marginTop: 5,
+              fontFamily: "PoppinsMedium",
+              paddingRight: 30,
+            }}
+          >
+            ${item.price.toFixed(2)}
+          </Grid>
         </Grid>
-      </Grid>
-      <Divider
-        sx={{
-          backgroundColor: "#dddddd",
-          marginTop: 2,
-          height: 2,
-          width: 297,
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      />
-    </Box>
+        <Divider
+          sx={{
+            backgroundColor: "#dddddd",
+            marginTop: 2,
+            height: 2,
+            width: 297,
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        />
+      </Box>
+    )
   );
 };
 
@@ -135,7 +137,5 @@ const ListCards = ({ id, filteredDishes }) => {
     </>
   );
 };
-
-ListCards.propTypes = {};
 
 export default ListCards;
