@@ -63,6 +63,22 @@
   }
 }
 
+@media (prefers-contrast: high) {
+
+  /* CSS styles for high contrast */
+  body {
+    color: white;
+  }
+}
+
+@media (prefers-contrast: more) {
+
+  /* CSS styles for even higher contrast */
+  body {
+    color: white;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -76,7 +92,7 @@ body {
 }
 
 body {
-
+  color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));

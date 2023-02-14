@@ -34,7 +34,7 @@ export default function CategoriesSquares({
     >
       {categories.map((item) => (
         <ImageListItem
-          key={item.img}
+          key={item.name}
           onClick={() => handleClick(item.category)}
         >
           <img

@@ -62,8 +62,8 @@ const RestaurantHeader = () => {
               >
                 {place.schedule}
                 <Image
-                  height={11}
-                  width={11}
+                  height={10}
+                  width={10}
                   alt="Clock Icon"
                   src={ClockIcon}
                   style={{ marginLeft: 2 }}
