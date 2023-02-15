@@ -15,6 +15,7 @@ export default function DishDescription({
   description,
   price,
   callories,
+  category,
 }) {
   return (
     <Box sx={{ marginTop: 5 }}>
@@ -100,7 +101,7 @@ export default function DishDescription({
               paddingTop: "13px",
             }}
           >
-            ${price?.toFixed(2)}
+            ${price?.toFixed(2)} {category === "Cortes Prime" ? "Oz" : null}
           </Typography>
         </Grid>
         <Grid

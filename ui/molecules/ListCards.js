@@ -106,7 +106,8 @@ const RenderItem = ({ item }) => {
               paddingRight: 30,
             }}
           >
-            ${item?.price?.toFixed(2)}
+            ${item?.price?.toFixed(2)}{" "}
+            {item.category === "Cortes Prime" ? "Oz" : null}
           </Grid>
         </Grid>
         <Divider

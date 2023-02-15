@@ -58,7 +58,7 @@ const RenderItem = ({ item }) => {
             color: "#fff",
           }}
         >
-          ${item.price}
+          ${item.price} {item.category === "Cortes Prime" ? "Oz" : null}
         </div>
       </ImageListItem>
     )

@@ -18,6 +18,7 @@ export default function Dish() {
         description={dish?.description}
         callories={dish?.callories}
         price={dish?.price}
+        category={dish?.category}
       />
     </div>
   );
