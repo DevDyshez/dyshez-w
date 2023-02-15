@@ -4,10 +4,11 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: 100,
-    height: 100,
+    width: 104,
+    height: 104,
     borderRadius: "50%",
     objectFit: "cover",
+    border: "1px solid  #D6BCB4",
   },
 }));
 

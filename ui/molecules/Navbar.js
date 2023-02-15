@@ -12,6 +12,8 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import BackIcon from "public/icons/back.png";
 import RocaLogo from "public/rocasmall.png";
+import RestaurantHeader from "./RestaurantHeader";
+import Grid from "@mui/material/Grid";
 
 export default function ButtonAppBar({ canBack }) {
   const router = useRouter();
@@ -24,63 +26,71 @@ export default function ButtonAppBar({ canBack }) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
-        position="static"
-        sx={{ backgroundColor: "#FFF", height: 60, justifyContent: "center" }}
+        position="fixed"
+        sx={{ backgroundColor: "#FFF", justifyContent: "center" }}
+        elevation={0}
       >
         <Toolbar>
-          {canBack && (
-            <>
-              <Image
-                src={BackIcon}
-                width={30}
-                height={30}
-                alt="Back Icon"
-                style={{
-                  position: "absolute",
-                  marginTop: "5px",
-                  top: "auto",
-                  bottom: "auto",
-                }}
-                onClick={() => router.back()}
-              />
+          <Grid container>
+            <Grid item xs={12} style={{ height: "40px" }}>
+              {canBack && (
+                <>
+                  <Image
+                    src={BackIcon}
+                    width={30}
+                    height={30}
+                    alt="Back Icon"
+                    style={{
+                      position: "absolute",
+                      marginTop: "5px",
+                      top: "auto",
+                      bottom: "auto",
+                    }}
+                    onClick={() => router.back()}
+                  />
 
-              <Image
-                src={RocaLogo}
-                width={29}
-                height={29}
-                alt="Roca Logo"
-                style={{
-                  position: "absolute",
-                  marginTop: "5px",
-                  top: "auto",
-                  bottom: "auto",
-                  left: 50,
-                }}
-                onClick={() => router.back()}
-              />
-            </>
-          )}
+                  <Image
+                    src={RocaLogo}
+                    width={29}
+                    height={29}
+                    alt="Roca Logo"
+                    style={{
+                      position: "absolute",
+                      marginTop: "5px",
+                      top: "auto",
+                      bottom: "auto",
+                      left: 50,
+                    }}
+                    onClick={() => router.back()}
+                  />
+                </>
+              )}
 
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{
-              flexGrow: 1,
-              display: "flex",
-              justifyContent: "center",
-              paddingTop: "5px",
-            }}
-          >
-            <Image
-              src={Logo}
-              width={90}
-              height={30}
-              alt="Logo"
-              onClick={() => {
-                router.push("/");
-              }}
-            />
-          </Typography>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{
+                  flexGrow: 1,
+                  display: "flex",
+                  justifyContent: "center",
+                  paddingTop: "10px",
+                }}
+              >
+                <Image
+                  src={Logo}
+                  width={90}
+                  height={37}
+                  alt="Logo"
+                  onClick={() => {
+                    router.push("/");
+                  }}
+                />
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <RestaurantHeader />
+            </Grid>
+          </Grid>
         </Toolbar>
       </AppBar>
     </Box>

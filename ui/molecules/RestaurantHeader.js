@@ -24,8 +24,8 @@ const RestaurantHeader = () => {
 
   return (
     <Box sx={{ flexGrow: 1, backgroundColor: "#fff" }}>
-      <Grid container sx={{ paddingTop: 2 }}>
-        <Grid item xs={5} sx={{ paddingLeft: 5 }}>
+      <Grid container sx={{ paddingTop: "10px" }}>
+        <Grid item xs={5} sx={{ paddingLeft: "20px" }}>
           <CircularImage src={place.logoUrl} alt="Logo" />
         </Grid>
         <Grid item xs={7}>
@@ -41,6 +41,7 @@ const RestaurantHeader = () => {
                 fontSize: 20,
                 fontWeight: "800",
                 marginRight: 2,
+                marginTop: "10px",
                 fontFamily: "MontserratBold",
               }}
             >

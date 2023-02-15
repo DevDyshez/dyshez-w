@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div style={{ backgroundColor: "#fff", minHeight: 850 }}>
       <Navbar />
-      <RestaurantHeader />
+      {/* <RestaurantHeader /> */}
       <Tabs />
     </div>
   );
