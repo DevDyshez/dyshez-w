@@ -70,14 +70,31 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: "100%", height: "100", paddingTop: 20 }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider", height: "100%" }}>
+    <Box
+      sx={{
+        width: "100%",
+        height: "100",
+        paddingTop: 19,
+        backgroundColor: "white",
+      }}
+    >
+      <Box
+        sx={{
+          borderBottom: 1,
+          borderColor: "divider",
+          height: "100%",
+          position: "fixed",
+          zIndex: 1,
+          width: "100%",
+        }}
+      >
         <Tabs
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
           variant="fullWidth"
           TabIndicatorProps={{ style: { background: "#434343" } }}
+          sx={{ backgroundColor: "#fff", minHeight: "50px" }}
         >
           <Tab
             label={

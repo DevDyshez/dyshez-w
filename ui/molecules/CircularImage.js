@@ -20,7 +20,13 @@ const CircularImage = ({ src, alt }) => {
       alt={alt}
       width={100}
       height={100}
-      className={classes.avatar}
+      style={{
+        width: 104,
+        height: 104,
+        borderRadius: "50%",
+        objectFit: "cover",
+        border: "1px solid  #D6BCB4",
+      }}
     />
   );
 };

@@ -27,7 +27,7 @@ export default function CategoriesSquares({
 
   return (
     <ImageList
-      sx={{ width: "100%", height: "100%" }}
+      sx={{ width: "100%", height: "100%", marginTop: "50px" }}
       cols={3}
       rowHeight={130}
       gap={1}

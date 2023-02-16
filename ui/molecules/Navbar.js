@@ -27,10 +27,13 @@ export default function ButtonAppBar({ canBack }) {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
         position="fixed"
-        sx={{ backgroundColor: "#FFF", justifyContent: "center" }}
+        sx={{
+          backgroundColor: "#FFF",
+          justifyContent: "center",
+        }}
         elevation={0}
       >
-        <Toolbar>
+        <Toolbar sx={{ paddingLeft: 0, paddingRight: 0 }}>
           <Grid container>
             <Grid item xs={12} style={{ height: "40px" }}>
               {canBack && (

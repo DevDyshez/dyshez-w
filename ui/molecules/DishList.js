@@ -15,14 +15,22 @@ export default function DishList({
 }) {
   return (
     <>
-      <Box sx={{ height: 50 }}>
+      <Box
+        sx={{
+          height: 50,
+          marginTop: "50px",
+          position: "fixed",
+          backgroundColor: "white",
+          zIndex: 11,
+        }}
+      >
         <ScrollableCategories
           id="roca"
           handleCategorySelect={handleCategorySelect}
           categorySelected={categorySelected}
         />
       </Box>
-      <Box>
+      <Box sx={{ paddingTop: "100px" }}>
         <ListCards id={"roca"} filteredDishes={filteredDishes} />
       </Box>
     </>
