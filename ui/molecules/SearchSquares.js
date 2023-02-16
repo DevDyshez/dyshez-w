@@ -20,7 +20,7 @@ const SearchSquares = () => {
   };
 
   return (
-    <Box sx={{ paddingTop: "50px" }}>
+    <Box sx={{ paddingTop: "48px" }}>
       <SearchInput
         setSearchLabel={setSearchLabel}
         filterMenu={filterMenu}

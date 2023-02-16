@@ -24,6 +24,7 @@ const ScrollableCategories = ({
         height: 55,
         paddingTop: 5,
         paddingBottom: 5,
+        paddingLeft: "6px",
         backgroundColor: "white",
       }}
     >

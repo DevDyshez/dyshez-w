@@ -82,7 +82,7 @@ export default function BasicTabs() {
         sx={{
           borderBottom: 1,
           borderColor: "divider",
-          height: "100%",
+          height: "6%",
           position: "fixed",
           zIndex: 1,
           width: "100%",

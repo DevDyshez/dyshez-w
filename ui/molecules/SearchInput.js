@@ -27,9 +27,15 @@ const SearchInput = ({ setSearchLabel, filterMenu, searchLabel }) => {
             marginRight: "auto",
             marginLeft: "auto",
             border: "1px solid #DBDBDB",
+            ":placeholder": {
+              color: "red",
+              fontStyle: "italic",
+              backgroundColor: "red",
+            },
           }}
           fullWidth
           id="search"
+          placeholder="Buscar"
           endAdornment={
             <Image src={SearchIcon} width={15} height={15} alt="Search Icon" />
           }

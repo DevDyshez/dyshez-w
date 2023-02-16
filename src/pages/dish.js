@@ -10,7 +10,9 @@ export default function Dish() {
   const dish = getDish(router?.query?.id);
 
   return (
-    <div style={{ backgroundColor: "#fff", minHeight: 850 }}>
+    <div
+      style={{ backgroundColor: "#fff", minHeight: 850, paddingTop: "70px" }}
+    >
       <Navbar canBack />
       <PhotoSlider images={dish?.images} />
       <DishDescription

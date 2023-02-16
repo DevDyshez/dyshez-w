@@ -90,9 +90,11 @@ export default function ButtonAppBar({ canBack }) {
                 />
               </Typography>
             </Grid>
-            <Grid item xs={12}>
-              <RestaurantHeader />
-            </Grid>
+            {!canBack && (
+              <Grid item xs={12}>
+                <RestaurantHeader />
+              </Grid>
+            )}
           </Grid>
         </Toolbar>
       </AppBar>
