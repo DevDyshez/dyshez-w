@@ -19,9 +19,7 @@ export default function DishList({
         sx={{
           height: 50,
           marginTop: "50px",
-          position: "fixed",
           backgroundColor: "white",
-          zIndex: 11,
         }}
       >
         <ScrollableCategories
@@ -30,7 +28,7 @@ export default function DishList({
           categorySelected={categorySelected}
         />
       </Box>
-      <Box sx={{ paddingTop: "100px" }}>
+      <Box sx={{ paddingTop: "5px" }}>
         <ListCards id={"roca"} filteredDishes={filteredDishes} />
       </Box>
     </>

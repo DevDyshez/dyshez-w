@@ -26,6 +26,13 @@ const ScrollableCategories = ({
         paddingBottom: 5,
         paddingLeft: "6px",
         backgroundColor: "white",
+        // hardcoded fixed
+        position: "fixed",
+        top: "202px",
+        left: 0,
+        right: 0,
+        overflowX: "auto",
+        zIndex: 11,
       }}
     >
       {categories.map((item) => {
