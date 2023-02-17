@@ -1,4 +1,4 @@
-import Test from "public/dishes/roca/test.png";
+import Test from "public/dishes/roca/test.webp";
 import PinkIcon from "public/pinkicon.png";
 import RocaQuesoBrie1 from "public/dishes/roca/quesobrie1.webp";
 import RocaQuesoBrie2 from "public/dishes/roca/quesobrie2.webp";

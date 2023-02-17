@@ -32,21 +32,21 @@ const RenderItem = ({ item }) => {
             textAlign: "center",
             color: "#000",
             fontSize: 16,
-            marginBottom: 2,
+            marginBottom: 1,
             fontFamily: "PoppinsSemiBoldItalic",
           }}
         >
           {item.name}
         </Typography>
         <Grid container>
-          <Grid item xs={10}>
+          <Grid item xs={11}>
             <Typography
               component="div"
               sx={{
                 flexGrow: 1,
                 justifyContent: "center",
                 textAlign: "center",
-                color: "#000",
+                color: "#a0a0a0",
                 display: "-webkit-box",
                 overflow: "hidden",
                 WebkitBoxOrient: "vertical",
@@ -61,11 +61,11 @@ const RenderItem = ({ item }) => {
           </Grid>
           <Grid
             item
-            xs={2}
+            xs={1}
             style={{
               display: "flex",
               justifyContent: "flex-end",
-              paddingRight: 25,
+              paddingRight: 1,
             }}
           >
             <Image

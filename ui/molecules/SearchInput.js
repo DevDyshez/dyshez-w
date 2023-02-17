@@ -33,9 +33,9 @@ const SearchInput = ({ setSearchLabel, filterMenu, searchLabel }) => {
           fullWidth
           id="search"
           placeholder="Buscar"
-          endAdornment={
-            <Image src={SearchIcon} width={15} height={15} alt="Search Icon" />
-          }
+          // endAdornment={
+          //   <Image src={SearchIcon} width={15} height={15} alt="Search Icon" />
+          // }
           disableUnderline
           onChange={(event) => {
             handleChange(event);

@@ -45,9 +45,8 @@ export default function ButtonAppBar({ canBack }) {
                     alt="Back Icon"
                     style={{
                       position: "absolute",
-                      marginTop: "5px",
-                      top: "auto",
-                      bottom: "auto",
+                      marginTop: "10px",
+                      marginLeft: "10px",
                     }}
                     onClick={() => router.back()}
                   />
@@ -59,7 +58,7 @@ export default function ButtonAppBar({ canBack }) {
                     alt="Roca Logo"
                     style={{
                       position: "absolute",
-                      marginTop: "5px",
+                      marginTop: "10px",
                       top: "auto",
                       bottom: "auto",
                       left: 50,
@@ -76,7 +75,7 @@ export default function ButtonAppBar({ canBack }) {
                   flexGrow: 1,
                   display: "flex",
                   justifyContent: "center",
-                  paddingTop: "10px",
+                  paddingTop: canBack ? "7px" : "10px",
                 }}
               >
                 <Image

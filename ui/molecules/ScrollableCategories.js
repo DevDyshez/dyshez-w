@@ -41,16 +41,17 @@ const ScrollableCategories = ({
                 item.category === categorySelected ? "outlined" : "filled"
               }
               style={{
-                backgroundColor:
-                  item.category === categorySelected ? "black" : "white",
-                color: item.category === categorySelected ? "white" : "black",
+                backgroundColor: "white",
+                color: "black",
                 border: "1px solid black",
                 borderRadius: 10,
+                opacity: item.category === categorySelected ? 1 : 0.4,
               }}
               sx={{
                 fontFamily: "PoppinsSemiBold",
                 fontSize: 12,
                 height: 39,
+                minWidth: "146px",
                 marginRight: "3px",
               }}
             />

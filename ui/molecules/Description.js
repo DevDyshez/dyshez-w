@@ -21,7 +21,7 @@ const Description = () => {
     "Con una original combinación entre clásico y lo contemporáneo, ROCA Steakhouse es un inigualable restaurante gourmet en Mérida, Yucatán, ideal para los amantes de los cortes de carne prime.";
 
   return (
-    <Box sx={{ marginTop: 1 }}>
+    <Box sx={{ marginTop: 1, marginBottom: 1 }}>
       <Grid container>
         <Grid
           item
