@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Box from "@mui/material/Box";
+import styles from "@/styles/Home.module.css";
 import Input from "@mui/material/Input";
 import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
@@ -27,11 +28,7 @@ const SearchInput = ({ setSearchLabel, filterMenu, searchLabel }) => {
             marginRight: "auto",
             marginLeft: "auto",
             border: "1px solid #DBDBDB",
-            ":placeholder": {
-              color: "red",
-              fontStyle: "italic",
-              backgroundColor: "red",
-            },
+            fontFamily: "MontserratRegular",
           }}
           fullWidth
           id="search"

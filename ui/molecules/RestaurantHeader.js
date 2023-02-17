@@ -49,7 +49,9 @@ const RestaurantHeader = () => {
             </Typography>
             <Box
               style={{
+                display: "flex",
                 alignItems: "center",
+                justifyContent: "flex-end",
                 textAlign: "right",
               }}
             >
@@ -59,12 +61,14 @@ const RestaurantHeader = () => {
                   fontSize: 14,
                   marginRight: 2,
                   fontFamily: "PoppinsRegular",
+                  display: "flex",
+                  alignItems: "center",
                 }}
               >
                 {place.schedule}
                 <Image
-                  height={10}
-                  width={10}
+                  height={15}
+                  width={15}
                   alt="Clock Icon"
                   src={ClockIcon}
                   style={{ marginLeft: 2 }}
