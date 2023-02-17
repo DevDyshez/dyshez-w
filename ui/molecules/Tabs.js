@@ -47,13 +47,14 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
+  const entries = filterMenu("roca", "Entradas");
 
-  const [filteredDishes, setFilteredDishes] = useState([]);
-  const [isFiltered, setIsFiltered] = useState(false);
-  const [categorySelected, setCategorySelected] = useState(null);
+  const [filteredDishes, setFilteredDishes] = useState(entries);
+  const [isFiltered, setIsFiltered] = useState(true);
+  const [categorySelected, setCategorySelected] = useState("Entradas");
 
   const handleCategorySelect = (category) => {
-    if (category !== categorySelected) {
+    if (category !== categorySelected || categorySelected === "Entradas") {
       const helper = filterMenu("roca", category);
       setFilteredDishes(helper);
       setIsFiltered(true);
