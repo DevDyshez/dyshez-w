@@ -21,14 +21,14 @@ const ScrollableCategories = ({
       style={{
         overflow: "auto",
         whiteSpace: "nowrap",
-        height: 55,
-        paddingTop: 5,
+        height: 65,
+        paddingTop: 9,
         paddingBottom: 5,
         paddingLeft: "6px",
         backgroundColor: "white",
         // hardcoded fixed
         position: "fixed",
-        top: "202px",
+        top: "240px",
         left: 0,
         right: 0,
         overflowX: "auto",
@@ -56,7 +56,7 @@ const ScrollableCategories = ({
               }}
               sx={{
                 fontFamily: "PoppinsSemiBold",
-                fontSize: 12,
+                fontSize: 14,
                 height: 39,
                 minWidth: "146px",
                 marginRight: "3px",

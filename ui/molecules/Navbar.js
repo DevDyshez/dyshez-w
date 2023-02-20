@@ -81,7 +81,7 @@ export default function ButtonAppBar({ canBack }) {
                 <Image
                   src={Logo}
                   width={90}
-                  height={37}
+                  height={30}
                   alt="Logo"
                   onClick={() => {
                     router.push("/");

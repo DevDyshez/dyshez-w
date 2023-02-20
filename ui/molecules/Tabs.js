@@ -75,7 +75,7 @@ export default function BasicTabs() {
       sx={{
         width: "100%",
         height: "100",
-        paddingTop: 19,
+        paddingTop: "185px",
         backgroundColor: "white",
       }}
     >
@@ -102,8 +102,8 @@ export default function BasicTabs() {
               <NextImage
                 src={BookmarkIcon}
                 alt="Icon Bookmark"
-                width={20}
-                height={20}
+                width={23}
+                height={23}
               />
             }
             {...a11yProps(0)}
@@ -113,8 +113,8 @@ export default function BasicTabs() {
               <NextImage
                 src={ListIcon}
                 alt="Icon List"
-                width={20}
-                height={20}
+                width={23}
+                height={23}
               />
             }
             {...a11yProps(1)}
@@ -124,15 +124,15 @@ export default function BasicTabs() {
               <NextImage
                 src={SquaresIcon}
                 alt="Icon 1"
-                width={20}
-                height={20}
+                width={23}
+                height={23}
               />
             }
             {...a11yProps(2)}
           />
           <Tab
             label={
-              <NextImage src={TopIcon} alt="Icon 1" width={20} height={20} />
+              <NextImage src={TopIcon} alt="Icon 1" width={23} height={23} />
             }
             {...a11yProps(3)}
           />

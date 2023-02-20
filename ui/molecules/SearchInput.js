@@ -22,20 +22,22 @@ const SearchInput = ({ setSearchLabel, filterMenu, searchLabel }) => {
             backgroundColor: "#fff",
             borderRadius: 15,
             paddingRight: 2,
-            paddingLeft: 1,
+            paddingLeft: "17px",
             height: 38,
             width: 376,
             marginRight: "auto",
             marginLeft: "auto",
             border: "1px solid #DBDBDB",
-            fontFamily: "MontserratRegular",
+            fontFamily: "PoppinsLight",
+            fontSize: 13,
+            color: "#606368",
           }}
           fullWidth
           id="search"
           placeholder="Buscar"
-          // endAdornment={
-          //   <Image src={SearchIcon} width={15} height={15} alt="Search Icon" />
-          // }
+          endAdornment={
+            <Image src={SearchIcon} width={15} height={15} alt="Search Icon" />
+          }
           disableUnderline
           onChange={(event) => {
             handleChange(event);

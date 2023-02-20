@@ -67,8 +67,8 @@ const RestaurantHeader = () => {
               >
                 {place.schedule}
                 <Image
-                  height={15}
-                  width={15}
+                  height={14}
+                  width={14}
                   alt="Clock Icon"
                   src={ClockIcon}
                   style={{ marginLeft: 2 }}
@@ -143,7 +143,7 @@ const RestaurantHeader = () => {
                 <Image
                   src={HeartIcon}
                   height={20}
-                  width={20}
+                  width={22}
                   alt="Location Image"
                 />
               </Grid>
