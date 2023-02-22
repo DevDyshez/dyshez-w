@@ -75,7 +75,7 @@ export default function BasicTabs() {
       sx={{
         width: "100%",
         height: "100",
-        paddingTop: "185px",
+        paddingTop: "170px",
         backgroundColor: "white",
       }}
     >

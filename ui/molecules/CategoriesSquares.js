@@ -48,6 +48,10 @@ export default function CategoriesSquares({
               position: "absolute",
               backgroundColor: item.id === "dyshezboard" ? "#d5145a" : "#fff",
               color: item.id === "dyshezboard" ? "#fff" : "#000",
+              border:
+                item.id === "dyshezboard"
+                  ? "0.5px solid #AA144A"
+                  : "1px solid #EAEAEA",
               bottom: 10,
               left: 0,
               borderTopRightRadius: 25,
