@@ -63,6 +63,7 @@ const RestaurantHeader = () => {
                   fontFamily: "PoppinsRegular",
                   display: "flex",
                   alignItems: "center",
+                  lineHeight: "14px",
                 }}
               >
                 {place.schedule}
@@ -71,7 +72,7 @@ const RestaurantHeader = () => {
                   width={14}
                   alt="Clock Icon"
                   src={ClockIcon}
-                  style={{ marginLeft: 2 }}
+                  style={{ marginLeft: "3px" }}
                 />
               </Typography>
             </Box>
