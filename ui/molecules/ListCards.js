@@ -39,7 +39,7 @@ const RenderItem = ({ item }) => {
           {item.name}
         </Typography>
         <Grid container>
-          <Grid item xs={11}>
+          <Grid item xs={12}>
             <Typography
               component="div"
               sx={{
@@ -53,31 +53,22 @@ const RenderItem = ({ item }) => {
                 WebkitLineClamp: 2,
                 fontSize: 12,
                 fontFamily: "PoppinsLight",
-                paddingLeft: 4,
+                paddingRight: "25px",
               }}
             >
               {item.description}
             </Typography>
           </Grid>
-          <Grid
-            item
-            xs={1}
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              paddingRight: 1,
+          <Image
+            src={NextIcon}
+            alt="Next Icon"
+            height={25}
+            width={25}
+            onClick={() => {
+              router.push(`/dish?id=${item.id}`);
             }}
-          >
-            <Image
-              src={NextIcon}
-              alt="Next Icon"
-              height={25}
-              width={25}
-              onClick={() => {
-                router.push(`/dish?id=${item.id}`);
-              }}
-            />
-          </Grid>
+            style={{ position: "absolute", right: "12px" }}
+          />
           <Grid item xs={6} style={{ marginTop: 5 }}>
             <Typography
               component="div"
