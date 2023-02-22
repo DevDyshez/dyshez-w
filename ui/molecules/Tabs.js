@@ -75,8 +75,9 @@ export default function BasicTabs() {
       sx={{
         width: "100%",
         height: "100",
-        paddingTop: "170px",
+        paddingTop: "157px",
         backgroundColor: "white",
+        marginBottom: "10px",
       }}
     >
       <Box
@@ -95,7 +96,11 @@ export default function BasicTabs() {
           aria-label="basic tabs example"
           variant="fullWidth"
           TabIndicatorProps={{ style: { background: "#434343" } }}
-          sx={{ backgroundColor: "#fff", minHeight: "50px" }}
+          sx={{
+            backgroundColor: "#fff",
+            minHeight: "52px",
+            paddingBottom: "4px",
+          }}
         >
           <Tab
             label={

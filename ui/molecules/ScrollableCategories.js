@@ -21,14 +21,13 @@ const ScrollableCategories = ({
       style={{
         overflow: "auto",
         whiteSpace: "nowrap",
-        height: 65,
-        paddingTop: 9,
-        paddingBottom: 5,
+        height: "55px",
+        paddingTop: "5px",
         paddingLeft: "6px",
         backgroundColor: "white",
         // hardcoded fixed
         position: "fixed",
-        top: "240px",
+        top: "205px",
         left: 0,
         right: 0,
         overflowX: "auto",
