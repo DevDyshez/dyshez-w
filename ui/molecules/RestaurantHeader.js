@@ -63,6 +63,7 @@ const RestaurantHeader = () => {
                   fontFamily: "PoppinsRegular",
                   display: "flex",
                   alignItems: "center",
+                  lineHeight: "14px",
                 }}
               >
                 {place.schedule}
@@ -71,83 +72,51 @@ const RestaurantHeader = () => {
                   width={14}
                   alt="Clock Icon"
                   src={ClockIcon}
-                  style={{ marginLeft: 2 }}
+                  style={{ marginLeft: "3px" }}
                 />
               </Typography>
             </Box>
           </Box>
-          <Box sx={{ marginTop: 1 }}>
-            <Grid container>
-              <Grid item xs={4} />
-              <Grid
-                item
-                xs={2}
-                sx={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
-                }}
-              >
-                <Image
-                  src={LocationIcon}
-                  height={20}
-                  width={20}
-                  alt="Location Image"
-                  onClick={() =>
-                    router.push("https://goo.gl/maps/iXVTHcZiJHbsgTam7")
-                  }
-                />
-              </Grid>
-              <Grid
-                item
-                xs={2}
-                sx={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
-                }}
-                onClick={() => setIsDescriptionOpen(!isDescriptionOpen)}
-              >
-                <Image
-                  src={PlusIcon}
-                  height={20}
-                  width={20}
-                  alt="Location Image"
-                />
-              </Grid>
-              <Grid
-                item
-                xs={2}
-                sx={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
-                }}
-              >
-                <Image
-                  src={ReservationIcon}
-                  height={20}
-                  width={20}
-                  alt="Reservation Image"
-                />
-              </Grid>
-              <Grid
-                item
-                xs={2}
-                sx={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
-                }}
-              >
-                <Image
-                  src={HeartIcon}
-                  height={20}
-                  width={22}
-                  alt="Location Image"
-                />
-              </Grid>
-            </Grid>
+          <Box
+            sx={{
+              marginTop: 1,
+              display: "flex",
+              alignItems: "center",
+              paddingRight: "14px",
+              justifyContent: "flex-end",
+            }}
+          >
+            <Image
+              src={LocationIcon}
+              height={24}
+              width={26}
+              alt="Location Image"
+              onClick={() =>
+                router.push("https://goo.gl/maps/iXVTHcZiJHbsgTam7")
+              }
+              style={{ marginRight: "25px" }}
+            />
+            <Image
+              src={PlusIcon}
+              height={22}
+              width={22}
+              alt="Plus Image"
+              style={{ marginRight: "25px" }}
+              onClick={() => setIsDescriptionOpen(!isDescriptionOpen)}
+            />
+            <Image
+              src={ReservationIcon}
+              height={24}
+              width={24}
+              style={{ marginRight: "25px" }}
+              alt="Reservation Image"
+            />
+            <Image
+              src={HeartIcon}
+              height={23}
+              width={26}
+              alt="Location Image"
+            />
           </Box>
         </Grid>
       </Grid>
