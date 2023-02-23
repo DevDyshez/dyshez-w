@@ -14,6 +14,7 @@ import WebIcon from "../../public/icons/web.png";
 import styles from "../../src/styles/Home.module.css";
 import Link from "@mui/material/Link";
 import DownArrow from "../../public/icons/downarrow.png";
+import UpArrow from "../../public/icons/uparrow.png";
 
 const Description = () => {
   const [showFullText, setShowFullText] = useState(false);
@@ -195,9 +196,9 @@ const Description = () => {
 
           {showFullSchedule ? (
             <Image
-              width={8}
-              height={8}
-              src={DownArrow}
+              width={9}
+              height={5}
+              src={UpArrow}
               alt="Down Arrow"
               onClick={() => {
                 setShowFullSchedule(!showFullSchedule);
@@ -205,8 +206,8 @@ const Description = () => {
             />
           ) : (
             <Image
-              width={8}
-              height={8}
+              width={9}
+              height={5}
               src={DownArrow}
               alt="Down Arrow"
               onClick={() => {

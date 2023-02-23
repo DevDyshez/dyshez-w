@@ -72,7 +72,7 @@ const DishImage = ({ id, filteredDishes }) => {
     <ImageList
       sx={{
         width: "100%",
-        maxWidth: "390px",
+        minWidth: "392px",
         height: "100%",
         overflow: "hidden",
       }}
