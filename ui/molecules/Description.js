@@ -12,7 +12,8 @@ import PinkClockIcon from "../../public/icons/pinkclock.png";
 import PinkPhoneIcon from "../../public/icons/pinkphone.png";
 import WebIcon from "../../public/icons/web.png";
 import styles from "../../src/styles/Home.module.css";
-import Link from "next/link";
+import Link from "@mui/material/Link";
+import DownArrow from "../../public/icons/downarrow.png";
 
 const Description = () => {
   const [showFullText, setShowFullText] = useState(false);
@@ -41,6 +42,7 @@ const Description = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            marginLeft: -1,
           }}
         >
           <div style={{ position: "relative" }}>
@@ -65,8 +67,8 @@ const Description = () => {
                 style={{
                   position: "absolute",
                   bottom: 2,
-                  right: 15,
-                  color: "#333333",
+                  right: 30,
+                  color: "#CCCCCC",
                   fontSize: 12,
                   fontWeight: "800",
                   fontFamily: "MontserratMedium",
@@ -75,7 +77,7 @@ const Description = () => {
                   setShowFullText(!showFullText);
                 }}
               >
-                Ver mas
+                más
               </h1>
             )}
             {showFullText && (
@@ -83,8 +85,8 @@ const Description = () => {
                 style={{
                   position: "absolute",
                   bottom: 0,
-                  right: 10,
-                  color: "#333333",
+                  right: 30,
+                  color: "#CCCCCC",
                   fontSize: 12,
                   fontWeight: "800",
                   fontFamily: "MontserratMedium",
@@ -93,7 +95,7 @@ const Description = () => {
                   setShowFullText(!showFullText);
                 }}
               >
-                Ver menos
+                menos
               </h1>
             )}
           </div>
@@ -118,6 +120,7 @@ const Description = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            marginLeft: -1,
           }}
         >
           <Typography
@@ -164,6 +167,7 @@ const Description = () => {
             display: "flex",
             justifyContent: "flex-start",
             alignItems: "center",
+            marginLeft: -1,
           }}
         >
           <Typography
@@ -189,31 +193,30 @@ const Description = () => {
             13:00 - 23:30
           </Typography>
 
-          <Typography
-            sx={{
-              color: "#333333",
-              fontSize: 16,
-              fontWeight: "800",
-              marginRight: 2,
-              fontFamily: "MontserratMedium",
-            }}
-            onClick={() => {
-              setShowFullSchedule(!showFullSchedule);
-            }}
-          >
-            {showFullSchedule ? "▲" : "▼"}
-          </Typography>
+          {showFullSchedule ? (
+            <Image
+              width={8}
+              height={8}
+              src={DownArrow}
+              alt="Down Arrow"
+              onClick={() => {
+                setShowFullSchedule(!showFullSchedule);
+              }}
+            />
+          ) : (
+            <Image
+              width={8}
+              height={8}
+              src={DownArrow}
+              alt="Down Arrow"
+              onClick={() => {
+                setShowFullSchedule(!showFullSchedule);
+              }}
+            />
+          )}
         </Grid>
         {showFullSchedule && (
-          <Grid
-            item
-            xs={10}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+          <Grid item xs={12} sx={{ paddingLeft: 7 }}>
             <Typography
               sx={{
                 color: "#333333",
@@ -224,13 +227,50 @@ const Description = () => {
                 textAlign: "left",
               }}
             >
-              Lunes: Cerrado. <br></br>
-              Martes: 13:00 - 23:30. <br></br>
-              Miércoles: 13:00 - 23:30.<br></br>
-              Jueves: 13:00 - 02:00. <br></br>
-              Viernes: 13:00 - 02:00. <br></br>
-              Sábado: 13:00 - 02:00. <br></br>
-              Domingo: 13:00 - 22:00.<br></br>
+              <Grid container>
+                <Grid item xs={3}>
+                  Lunes:
+                </Grid>
+                <Grid item xs={9}>
+                  Cerrado.
+                </Grid>
+                <Grid item xs={3}>
+                  Martes:
+                </Grid>
+                <Grid item xs={9}>
+                  13:00 - 23:30
+                </Grid>
+                <Grid item xs={3}>
+                  Miércoles:
+                </Grid>
+                <Grid item xs={9}>
+                  13:00 - 23:30
+                </Grid>
+                <Grid item xs={3}>
+                  Jueves:
+                </Grid>
+                <Grid item xs={9}>
+                  13:00 - 02:00
+                </Grid>
+                <Grid item xs={3}>
+                  Viernes:
+                </Grid>
+                <Grid item xs={9}>
+                  13:00 - 02:00
+                </Grid>
+                <Grid item xs={3}>
+                  Sábado:
+                </Grid>
+                <Grid item xs={9}>
+                  13:00 - 02:00
+                </Grid>
+                <Grid item xs={3}>
+                  Domingo:
+                </Grid>
+                <Grid item xs={9}>
+                  13:00 - 22:00
+                </Grid>
+              </Grid>
             </Typography>
           </Grid>
         )}
@@ -254,18 +294,21 @@ const Description = () => {
             display: "flex",
             justifyContent: "flex-start",
             alignItems: "center",
+            marginLeft: -1,
           }}
         >
-          <Typography
+          <Link
             sx={{
               color: "#333333",
               fontSize: 12,
               marginRight: 2,
               fontFamily: "MontserratMedium",
             }}
+            href="tel:9999123456"
+            underline="none"
           >
             9999-123-456
-          </Typography>
+          </Link>
         </Grid>
       </Grid>
       <Grid container sx={{ marginTop: 1 }}>
@@ -287,18 +330,21 @@ const Description = () => {
             display: "flex",
             justifyContent: "flex-start",
             alignItems: "center",
+            marginLeft: -1,
           }}
         >
-          <Typography
+          <Link
             sx={{
               color: "#333333",
               fontSize: 12,
               marginRight: 2,
               fontFamily: "MontserratMedium",
             }}
+            href="https://www.rocasteakhouse.com/"
+            target={"_blank"}
           >
             Ver página web
-          </Typography>
+          </Link>
         </Grid>
       </Grid>
     </Box>

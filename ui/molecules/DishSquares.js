@@ -20,7 +20,7 @@ export default function DishSquares({
       <Box
         sx={{
           height: 50,
-          marginTop: "50px",
+          marginTop: "54px",
           backgroundColor: "white",
         }}
       >

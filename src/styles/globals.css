@@ -150,3 +150,10 @@ a {
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../../public/fonts/OpenSansRegular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}

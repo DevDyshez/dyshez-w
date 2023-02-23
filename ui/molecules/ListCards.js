@@ -38,7 +38,7 @@ const RenderItem = ({ item }) => {
         >
           {item.name}
         </Typography>
-        <Grid container>
+        <Grid container sx={{ position: "relative" }}>
           <Grid item xs={12}>
             <Typography
               component="div"
@@ -46,13 +46,13 @@ const RenderItem = ({ item }) => {
                 flexGrow: 1,
                 justifyContent: "center",
                 textAlign: "center",
-                color: "#a0a0a0",
+                color: "#9e9e9e",
                 display: "-webkit-box",
                 overflow: "hidden",
                 WebkitBoxOrient: "vertical",
                 WebkitLineClamp: 2,
                 fontSize: 12,
-                fontFamily: "PoppinsLight",
+                fontFamily: "OpenSansRegular",
                 paddingRight: "25px",
               }}
             >
@@ -67,9 +67,9 @@ const RenderItem = ({ item }) => {
             onClick={() => {
               router.push(`/dish?id=${item.id}`);
             }}
-            style={{ position: "absolute", right: "12px" }}
+            style={{ position: "absolute", right: "-2px", bottom: "20px" }}
           />
-          <Grid item xs={6} style={{ marginTop: 5 }}>
+          <Grid item xs={6} style={{ marginTop: "15px" }}>
             <Typography
               component="div"
               sx={{
@@ -95,6 +95,7 @@ const RenderItem = ({ item }) => {
               marginTop: 5,
               fontFamily: "PoppinsMedium",
               paddingRight: 30,
+              marginTop: "15px",
             }}
           >
             ${item?.price?.toFixed(2)}{" "}
@@ -104,7 +105,7 @@ const RenderItem = ({ item }) => {
         <Divider
           sx={{
             backgroundColor: "#dddddd",
-            marginTop: 2,
+            marginTop: 1,
             height: 2,
             width: 297,
             marginLeft: "auto",

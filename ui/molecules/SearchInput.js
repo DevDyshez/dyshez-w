@@ -15,7 +15,13 @@ const SearchInput = ({ setSearchLabel, filterMenu, searchLabel }) => {
   };
 
   return (
-    <Box sx={{ "& > :not(style)": { m: 1 } }}>
+    <Box
+      sx={{
+        "& > :not(style)": { m: 1 },
+        paddingTop: "5px",
+        paddingBottom: "2px",
+      }}
+    >
       <FormControl variant="standard">
         <Input
           sx={{
