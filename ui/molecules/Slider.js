@@ -22,7 +22,7 @@ export default function PhotoSlider({ images }) {
     appendDots: (dots) => (
       <div
         style={{
-          bottom: 20,
+          bottom: 50,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",

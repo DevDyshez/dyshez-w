@@ -18,7 +18,7 @@ export default function DishDescription({
   category,
 }) {
   return (
-    <Box sx={{ marginTop: 5 }}>
+    <Box sx={{ marginTop: 3 }}>
       <Grid container>
         <Grid item xs={12}>
           <Typography
@@ -61,91 +61,27 @@ export default function DishDescription({
         </Grid>
         <Grid
           item
-          xs={4}
-          sx={{
-            textAlign: "center",
-            height: 50,
-            paddingTop: 2,
-          }}
-        >
-          <Image src={SpicyIcon} width={26} height={26} alt="Keto Icon" />
-        </Grid>
-        <Grid
-          item
-          xs={4}
-          sx={{
-            textAlign: "center",
-            height: 50,
-          }}
-        >
-          <Image src={KetoIcon} width={51} height={51} alt="Keto Icon" />
-        </Grid>
-        <Grid
-          item
-          xs={4}
+          xs={12}
           sx={{
             height: 50,
             display: "flex",
             alignItems: "center",
+            paddingRight: "40px",
           }}
         >
           <Typography
             component="div"
             sx={{
               flexGrow: 1,
-              textAlign: "center",
+              textAlign: "right",
               color: "#000",
               fontSize: 16,
               fontFamily: "PoppinsMedium",
               height: 50,
-              paddingTop: "13px",
+              paddingTop: "0",
             }}
           >
             ${price?.toFixed(2)} {category === "Cortes Prime" ? "Oz" : null}
-          </Typography>
-        </Grid>
-        <Grid
-          item
-          xs={4}
-          sx={{
-            textAlign: "center",
-            height: 50,
-          }}
-        >
-          <Image src={VeganIcon} width={51} height={51} alt="Keto Icon" />
-        </Grid>
-        <Grid
-          item
-          xs={4}
-          sx={{
-            textAlign: "center",
-            height: 50,
-          }}
-        >
-          <Image src={GlutenFreeIcon} width={51} height={51} alt="Keto Icon" />
-        </Grid>
-        <Grid
-          item
-          xs={4}
-          sx={{
-            height: 50,
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          <Typography
-            component="div"
-            sx={{
-              flexGrow: 1,
-              textAlign: "center",
-              color: "#666666",
-              fontSize: 13,
-              fontFamily: "PoppinsMedium",
-              height: 50,
-              paddingTop: "15px",
-            }}
-          >
-            {callories} kcal
           </Typography>
         </Grid>
       </Grid>

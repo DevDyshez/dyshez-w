@@ -33,9 +33,16 @@ export default function ButtonAppBar({ canBack }) {
         }}
         elevation={0}
       >
-        <Toolbar sx={{ paddingLeft: 0, paddingRight: 0 }}>
+        <Toolbar
+          sx={{
+            paddingLeft: 0,
+            paddingRight: 0,
+            height: canBack ? "37px" : null,
+            minHeight: canBack ? "37px" : null,
+          }}
+        >
           <Grid container>
-            <Grid item xs={12} style={{ height: "40px" }}>
+            <Grid item xs={12} style={{ height: "37px" }}>
               {canBack && (
                 <>
                   <Image
@@ -75,7 +82,7 @@ export default function ButtonAppBar({ canBack }) {
                   flexGrow: 1,
                   display: "flex",
                   justifyContent: "center",
-                  paddingTop: canBack ? "7px" : "10px",
+                  paddingTop: canBack ? "10px" : "10px",
                 }}
               >
                 <Image
