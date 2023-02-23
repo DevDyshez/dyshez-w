@@ -5,6 +5,7 @@ import { Button } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import Tooltip from "@mui/material/Tooltip";
+import Snackbar from "@mui/material/Snackbar";
 import ListIcon from "../../public/icons/list.png";
 import CopyIcon from "../../public/icons/copyfile.png";
 import DirectionIcon from "../../public/icons/direction.png";
@@ -19,11 +20,30 @@ import UpArrow from "../../public/icons/uparrow.png";
 const Description = () => {
   const [showFullText, setShowFullText] = useState(false);
   const [showFullSchedule, setShowFullSchedule] = useState(false);
+  const [isOpenSnackbar, setIsOpenSnackbar] = useState(false);
   const text =
     "Con una original combinación entre clásico y lo contemporáneo, ROCA Steakhouse es un inigualable restaurante gourmet en Mérida, Yucatán, ideal para los amantes de los cortes de carne prime.";
 
+  const handleSnackbar = () => {
+    navigator.clipboard.writeText(
+      "Av. Andrés García Lavin, Montebello, Luxury Place, Local-5, Mérida, Mexico"
+    );
+
+    setIsOpenSnackbar(true);
+
+    setTimeout(() => {
+      setIsOpenSnackbar(false);
+    }, 3000);
+  };
+
   return (
     <Box sx={{ marginTop: 1, marginBottom: 1 }}>
+      <Snackbar
+        open={isOpenSnackbar}
+        autoHideDuration={2000}
+        message="Dirección Copiada"
+        sx={{ fontFamily: "MontserratMedium" }}
+      />
       <Grid container>
         <Grid
           item
@@ -146,7 +166,13 @@ const Description = () => {
             alignItems: "center",
           }}
         >
-          <Image src={CopyIcon} width={20} height={24} alt="List Icon" />
+          <Image
+            src={CopyIcon}
+            width={20}
+            height={24}
+            alt="List Icon"
+            onClick={() => handleSnackbar()}
+          />
         </Grid>
       </Grid>
       <Grid container sx={{ marginTop: 1 }}>
