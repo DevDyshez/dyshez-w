@@ -25,13 +25,16 @@ export default function DishSquares({
         }}
       >
         <ScrollableCategories
-          id="roca"
+          id={process.env.NEXT_PUBLIC_BRAND}
           handleCategorySelect={handleCategorySelect}
           categorySelected={categorySelected}
         />
       </Box>
       <Box sx={{ paddingTop: "5px" }}>
-        <DishImage id={"roca"} filteredDishes={filteredDishes} />
+        <DishImage
+          id={process.env.NEXT_PUBLIC_BRAND}
+          filteredDishes={filteredDishes}
+        />
       </Box>
     </>
   );

@@ -8,7 +8,7 @@ const SearchSquares = () => {
   const [filtered, setFiltered] = useState([]);
   const [searchLabel, setSearchLabel] = useState("");
 
-  const dishes = getMenu("roca");
+  const dishes = getMenu(process.env.NEXT_PUBLIC_BRAND);
 
   const filterMenu = () => {
     const helper = dishes.filter((dish) => {
@@ -35,7 +35,7 @@ const SearchSquares = () => {
       />
       <Box>
         <DishImage
-          id={"roca"}
+          id={process.env.NEXT_PUBLIC_BRAND}
           filteredDishes={filtered.length > 0 ? filtered : dishes}
         />
       </Box>
