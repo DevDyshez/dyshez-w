@@ -47,7 +47,8 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
-  const entries = filterMenu("roca", "Entradas");
+  const entries = filterMenu(process.env.NEXT_PUBLIC_BRAND, "Entradas");
+  console.log(process.env.NEXT_PUBLIC_BRAND);
 
   const [filteredDishes, setFilteredDishes] = useState(entries);
   const [isFiltered, setIsFiltered] = useState(true);
@@ -55,7 +56,7 @@ export default function BasicTabs() {
 
   const handleCategorySelect = (category) => {
     if (category !== categorySelected || categorySelected === "Entradas") {
-      const helper = filterMenu("roca", category);
+      const helper = filterMenu(process.env.NEXT_PUBLIC_BRAND, category);
       setFilteredDishes(helper);
       setIsFiltered(true);
       setCategorySelected(category);
@@ -145,7 +146,7 @@ export default function BasicTabs() {
       </Box>
       <TabPanel value={value} index={0}>
         <CategoriesSquares
-          id={"roca"}
+          id={process.env.NEXT_PUBLIC_BRAND}
           handleCategorySelect={handleCategorySelect}
           handleChange={handleChange}
         />

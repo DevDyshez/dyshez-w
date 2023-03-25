@@ -23,13 +23,16 @@ export default function DishList({
         }}
       >
         <ScrollableCategories
-          id="roca"
+          id={process.env.NEXT_PUBLIC_BRAND}
           handleCategorySelect={handleCategorySelect}
           categorySelected={categorySelected}
         />
       </Box>
       <Box sx={{ paddingTop: "5px" }}>
-        <ListCards id={"roca"} filteredDishes={filteredDishes} />
+        <ListCards
+          id={process.env.NEXT_PUBLIC_BRAND}
+          filteredDishes={filteredDishes}
+        />
       </Box>
     </>
   );

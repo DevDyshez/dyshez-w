@@ -13,7 +13,7 @@ export default function CategoriesSquares({
   handleCategorySelect,
   handleChange,
 }) {
-  const categories = getMenuCategories("roca");
+  const categories = getMenuCategories(process.env.NEXT_PUBLIC_BRAND);
   const router = useRouter();
 
   const handleClick = (category) => {

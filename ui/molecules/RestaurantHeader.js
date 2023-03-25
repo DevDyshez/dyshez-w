@@ -17,7 +17,7 @@ import Description from "./Description";
 import ClockIcon from "public/icons/clock.png";
 
 const RestaurantHeader = () => {
-  const place = getPlace("roca");
+  const place = getPlace(process.env.NEXT_PUBLIC_BRAND);
   const router = useRouter();
 
   const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
