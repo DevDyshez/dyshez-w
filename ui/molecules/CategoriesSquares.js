@@ -46,8 +46,8 @@ export default function CategoriesSquares({
           <div
             style={{
               position: "absolute",
-              backgroundColor: item.id === "dyshezboard" ? "#d5145a" : "#fff",
-              color: item.id === "dyshezboard" ? "#fff" : "#000",
+              backgroundColor: item.id === "dyshezboard" ? "#d5145a" : "#2D2D2D",
+              color: item.id === "dyshezboard" ? "#fff" : "#fff",
               border:
                 item.id === "dyshezboard"
                   ? "0.5px solid #AA144A"
@@ -58,9 +58,9 @@ export default function CategoriesSquares({
               borderBottomRightRadius: 25,
               paddingLeft: 5,
               paddingRight: 10,
-              fontSize: 13,
+              fontSize: 9,
               fontFamily: "PoppinsRegular",
-              maxWidth: item.isOneLine ? "85%" : "63%",
+              maxWidth: item.isOneLine ? "85%" : "75%",
             }}
           >
             {item.category}
