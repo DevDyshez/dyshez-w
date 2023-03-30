@@ -51,7 +51,7 @@ export default function CategoriesSquares({
               border:
                 item.id === "dyshezboard"
                   ? "0.5px solid #AA144A"
-                  : "1px solid #EAEAEA",
+                  : "1px solid #2D2D2D",
               bottom: 10,
               left: 0,
               borderTopRightRadius: 25,
