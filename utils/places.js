@@ -11,6 +11,7 @@ export const getPlace = (id) => {
 };
 
 export const places = [
+  
   {
     name: "Roca Steakhouse",
     type: "Restaurante",
@@ -26,6 +27,7 @@ export const places = [
     isActive: true,
     isCopy: false,
   },
+  
   {
     name: "Bostons",
     type: "Restaurante",
@@ -41,6 +43,7 @@ export const places = [
     isActive: true,
     isCopy: false,
   },
+  
   {
     name: "Catrín",
     type: "Restaurante",
