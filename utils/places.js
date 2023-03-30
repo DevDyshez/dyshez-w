@@ -1,5 +1,6 @@
 import RocaLogo from "../public/restaurants/roca.jpg";
 import BostonsLogo from "../public/restaurants/bostons.jpg";
+import CatrinLogo from "../public/restaurants/catrin.png";
 
 export const getPlaces = () => {
   return places.filter((item) => item.type === "Restaurante");
@@ -44,7 +45,7 @@ export const places = [
     name: "Catrín",
     type: "Restaurante",
     id: "catrin",
-    logoUrl: BostonsLogo,
+    logoUrl: CatrinLogo,
     schedule: "13:00 - 3:00",
     description:
       "CATRIN 47 es una cocina / cantina muy mexicana, situada en pleno siglo XXI con interpretaciones actuales de los platillos más emblemáticos del país y una mixología que desafía hasta el más intrépido de sus visitantes.",

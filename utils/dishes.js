@@ -920,14 +920,14 @@ export const dishes = [
     isOneLine: true,
   },
   {
-    name: "Ensaladas y Sopas",
+    name: "Ensalada César",
     id: "ensaladacatrin",
     restaurantId: "catrin",
     description:
       "Corazones de lechuga, pollo en recado rojo, vegetales de temporada, aderezo cesar de la casa y chips tortilla",
     callories: 200,
     price: 145,
-    category: "Entradas3",
+    category: "Ensaladas y Sopas",
     imageUrl: RocaQuesoBrie1,
     images: [RocaQuesoBrie1, RocaQuesoBrie2, RocaQuesoBrie3],
     likes: 5,
