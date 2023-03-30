@@ -22,11 +22,11 @@ const Description = () => {
   const [showFullSchedule, setShowFullSchedule] = useState(false);
   const [isOpenSnackbar, setIsOpenSnackbar] = useState(false);
   const text =
-    "Con una original combinación entre clásico y lo contemporáneo, ROCA Steakhouse es un inigualable restaurante gourmet en Mérida, Yucatán, ideal para los amantes de los cortes de carne prime.";
+  "CATRIN 47 es una cocina / cantina muy mexicana, situada en pleno siglo XXI con interpretaciones actuales de los platillos más emblemáticos del país y una mixología que desafía hasta el más intrépido de sus visitantes.";
 
   const handleSnackbar = () => {
     navigator.clipboard.writeText(
-      "Av. Andrés García Lavin, Montebello, Luxury Place, Local-5, Mérida, Mexico"
+      "Calle 47 #463B, entre 54 y 52, Colonia Centro, Mérida, Mexico"
     );
 
     setIsOpenSnackbar(true);
@@ -331,7 +331,7 @@ const Description = () => {
               marginRight: 2,
               fontFamily: "MontserratMedium",
             }}
-            href="tel:9999123456"
+            href="tel:9995181725"
             underline="none"
           >
             9999-123-456
@@ -367,7 +367,7 @@ const Description = () => {
               marginRight: 2,
               fontFamily: "MontserratMedium",
             }}
-            href="https://www.rocasteakhouse.com/"
+            href="https://www.catrin47.com/"
             target={"_blank"}
           >
             Ver página web
