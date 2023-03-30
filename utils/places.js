@@ -40,4 +40,19 @@ export const places = [
     isActive: true,
     isCopy: false,
   },
+  {
+    name: "Catrín",
+    type: "Restaurante",
+    id: "catrin",
+    logoUrl: BostonsLogo,
+    schedule: "13:00 - 3:00",
+    description:
+      "CATRIN 47 es una cocina / cantina muy mexicana, situada en pleno siglo XXI con interpretaciones actuales de los platillos más emblemáticos del país y una mixología que desafía hasta el más intrépido de sus visitantes.",
+    address:
+      "Calle 47 #463B, entre 54 y 52, Colonia Centro, Mérida, Mexico",
+    phone: "9995181725",
+    url: "https://www.catrin47.com/",
+    isActive: true,
+    isCopy: false,
+  },
 ];
