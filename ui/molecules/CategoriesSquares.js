@@ -58,7 +58,7 @@ export default function CategoriesSquares({
               borderBottomRightRadius: 25,
               paddingLeft: 5,
               paddingRight: 10,
-              fontSize: 9,
+              fontSize: 10,
               fontFamily: "PoppinsRegular",
               maxWidth: item.isOneLine ? "85%" : "75%",
             }}
